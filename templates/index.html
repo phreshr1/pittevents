@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    .floating-toggle {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #007BA7;
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+    #main {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      min-height: 100vh;
+      position: relative;
+    }
+
+  #sidebar {
+  width: 320px;
+  background: #f8f8f8;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-right: 1px solid #ccc;
+
+  position: fixed;          /* ✅ stays fixed on scroll */
+  top: 0;
+  left: 0;
+  height: 100vh;            /* ✅ full viewport height */
+  overflow-y: auto;         /* ✅ scrolls internally if long */
+  z-index: 1000;
+
+  transform: translateX(-320px); /* hidden by default */
+  transition: transform 0.3s ease;
+}
+
+    .sidebar-open #sidebar {
+      transform: translateX(0);
+    }
+
+   #calendar {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  overflow: hidden;
+  transition: margin-left 0.3s ease;
+}
+
+.fc-view-harness {
+  flex-grow: 1;
+  overflow-y: auto;
+  position: relative;
+}
+
+    .sidebar-open #calendar {
+      margin-left: 320px;
+    }
+
+  button:not(#backToPreviousViewBtn):not(#toggleSidebar), input#searchInput {
+  width: 100%;
+  margin: 0.25rem 0;
+}
+
+    .legend-label {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+      margin: 0.25rem 0;
+    }
+
+    .legend-color {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      margin-right: 6px;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    input#searchInput {
+      margin-top: 0.5rem;
+      width: 100%;
+    }
+
+    .fc-event {
+      padding: 4px 6px;
+      border-radius: 10px;
+      line-height: 1.3;
+      white-space: normal !important;
+    }
+
+    .fc-event-time, .fc-event-title {
+      display: block;
+      white-space: normal !important;
+    }
+
+    .fc-day-today {
+      box-shadow: 0 0 0 3px orange inset, 0 0 8px orange;
+      border-radius: 4px;
+      z-index: 1;
+    }
+
+    .fc-event.past-event {
+      opacity: 0.4;
+    }
+	
+	.fc-event-time {
+  display: block;
+  font-weight: bold;
+  white-space: normal !important;
+  overflow: visible !important;
+}
+
+.fc-event-title {
+  display: block;
+  white-space: normal !important;
+}
+
+.fc-event {
+  display: block !important;
+  padding: 4px 6px;
+  border-radius: 10px !important;
+  line-height: 1.3;
+  white-space: normal !important;
+  overflow: visible !important;
+}
+
+#vpToggle {
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  line-height: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  height: 1.5rem;
+}
+
+.fc-scrollgrid {
+  border-collapse: separate;
+}
+
+.fc-col-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 999;
+}
+
+.fc-toolbar.fc-header-toolbar {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1000;
+  padding-top: 0.5rem;
+}
+
+//* Sticky toolbar for all views */
+.fc .fc-toolbar.fc-header-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white;
+}
+
+/* Sticky header for month (dayGrid) view */
+.fc .fc-col-header {
+  position: sticky;
+  top: 2.5em; /* enough to show below toolbar */
+  z-index: 90;
+  background: white;
+}
+
+/* Sticky time axis and day headers for timeGrid (week/day/3-day) views */
+.fc .fc-timegrid-header {
+  position: sticky;
+  top: 2.5em;
+  z-index: 90;
+  background: white;
+}
+#calendarViewSelect {
+  height: 34px;
+  padding: 4px 6px;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  appearance: none;
+  background-color: white;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4L2 0zm0 5L0 3h4l-2 2z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 8px 10px;
+}
+#searchInput {
+  height: 34px;
+  padding: 4px 6px;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.fc-toolbar-title {
+  margin-left: 1rem;
+}
+
+@media (max-width: 600px) {
+  .fc-toolbar-title {
+    margin-left: 0.5rem;
+  }
+}
+#calendar .fc-toolbar {
+  padding-left: 1rem;
+}
+#backToPreviousViewBtn {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007BA7;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s ease;
+  display: inline-block;
+  width: fit-content;
+  max-width: none;
+}
+#backToPreviousViewBtn:hover {
+  background-color: #005f85;
+}
+  </style>
+</head>
+<body>
+  <button id="toggleSidebar" class="floating-toggle">☰</button>
+  <div id="main">
+    <div id="sidebar">
+	
+      <fieldset>
+        <legend>Filter & Search</legend>
+        <input type="text" id="searchInput" placeholder="Search events..." />
+        <div style="margin-top: 0.5rem;">
+          <button id="selectAllBtn" type="button">Select All</button>
+          <button id="selectNoneBtn" type="button">Select None</button>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Show events from:</legend>
+
+        <div><strong>Museums & Cultural</strong></div>
+        <label class="legend-label"><span class="legend-color" style="background-color: #228B22;"></span><input type="checkbox" class="source-toggle" value="Phipps" checked> Phipps</label>
+        <label class="legend-label"><span class="legend-color" style="background-color: #007BA7;"></span><input type="checkbox" class="source-toggle" value="Aviary" checked> Aviary</label>
+        <label class="legend-label"><span class="legend-color" style="background-color: #800080;"></span><input type="checkbox" class="source-toggle" value="Cultural District" checked> Cultural District</label>
+        <label class="legend-label"><span class="legend-color" style="background-color: #FF0000;"></span><input type="checkbox" class="source-toggle" value="Heinz History Center" checked> Heinz History Center</label>
+
+        <div><strong>Outdoors & Community</strong></div>
+        <label class="legend-label"><span class="legend-color" style="background-color: #4CAF50;"></span><input type="checkbox" class="source-toggle" value="Pittsburgh Parks" checked> Pittsburgh Parks</label>
+        <label class="legend-label"><span class="legend-color" style="background-color: #A52A2A;"></span><input type="checkbox" class="source-toggle" value="Lawrence Convention Center" checked> Lawrence Convention Center</label>
+
+<label class="legend-label" style="display: flex; align-items: center;">
+  <span class="legend-color" style="background-color: #FFD700; margin-right: 6px;"></span>
+  <input type="checkbox" class="source-toggle" id="visitPghMaster" checked style="margin-right: 4px;">
+  <span style="margin-right: 4px;">VisitPittsburgh</span>
+  <button type="button" id="vpToggle" style="all: unset; font-size: 0.6rem; cursor: pointer;">▼</button>
+
+</label>
+<div id="visitPghSubcategories" style="display: none;">
+  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Comedy" checked> Comedy</label>
+  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Culinary" checked> Culinary</label>
+  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Family Fun" checked> Family Fun</label>
+  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Festivals/Fairs/Parades" checked> Festivals</label>
+  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Film" checked> Film</label>
+  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Fundraiser" checked> Fundraiser</label>
+  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - History + Heritage" checked> History + Heritage</label>
+  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Musical Performance" checked> Musical Performance</label>
+  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Outdoor Adventure" checked> Outdoor Adventure</label>
+  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Performing Arts" checked> Performing Arts</label>
+  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Sporting Events" checked> Sporting Events</label>
+  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Sports Competitions + Tournaments" checked> Sports Competitions</label>
+  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Theater" checked> Theater</label>
+  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Tours + Sightseeing" checked> Tours</label>
+  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Virtual Event" checked> Virtual Event</label>
+  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Visual Arts" checked> Visual Arts</label>
+  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Workshops/Seminars/Lectures" checked> Workshops</label>
+</div>
+
+
+        <div><strong>Sports</strong></div>
+        <label class="legend-label"><span class="legend-color" style="background-color: #000000;"></span><input type="checkbox" class="source-toggle" value="Pirates" checked> Pirates</label>
+      </fieldset>
+    <fieldset style="margin-top: 1rem;">
+  <legend>Calendar View</legend>
+  <select id="calendarViewSelect" style="width: 100%; padding: 4px; height: 34px; font-size: 1rem;">
+    <option value="dayGridMonth">Month</option>
+    <option value="timeGridWeek">Week</option>
+	<option value="threeDay">3 Day</option>
+    <option value="timeGridDay">Day</option>
+    
+  </select>
+  </div>
+  <button id="backToPreviousViewBtn" style="display:none; position: fixed; top: 1rem; right: 1rem; z-index: 9999;">
+  ← Back
+</button>
+</fieldset>
+    <div id="calendar"></div>
+  </div>
+
+  <script>
+    const sourceColors = {
+      "Phipps": "#228B22",
+      "Aviary": "#007BA7",
+      "Cultural District": "#800080",
+      "Heinz History Center": "#FF0000",
+      "Pittsburgh Parks": "#4CAF50",
+      "Lawrence Convention Center": "#A52A2A",
+      "Pirates": "#000000",
+      "VisitPittsburgh - Comedy": "#FFD700",
+      "VisitPittsburgh - Culinary": "#FFD700",
+      "VisitPittsburgh - Family Fun": "#FFD700",
+      "VisitPittsburgh - Festivals/Fairs/Parades": "#FFD700",
+      "VisitPittsburgh - Film": "#FFD700",
+      "VisitPittsburgh - Fundraiser": "#FFD700",
+      "VisitPittsburgh - History + Heritage": "#FFD700",
+      "VisitPittsburgh - Musical Performance": "#FFD700",
+      "VisitPittsburgh - Outdoor Adventure": "#FFD700",
+      "VisitPittsburgh - Performing Arts": "#FFD700",
+      "VisitPittsburgh - Sporting Events": "#FFD700",
+      "VisitPittsburgh - Sports Competitions + Tournaments": "#FFD700",
+      "VisitPittsburgh - Theater": "#FFD700",
+      "VisitPittsburgh - Tours + Sightseeing": "#FFD700",
+      "VisitPittsburgh - Virtual Event": "#FFD700",
+      "VisitPittsburgh - Visual Arts": "#FFD700",
+      "VisitPittsburgh - Workshops/Seminars/Lectures": "#FFD700"
+    };
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const calendarEl = document.getElementById("calendar");
+      const isMobile = window.matchMedia("(max-width: 767px)").matches;
+	  if (isMobile) {
+  const viewSelect = document.getElementById("calendarViewSelect");
+  if (viewSelect) {
+    viewSelect.value = "threeDay";
+  }
+}
+const initialView = isMobile ? "threeDay" : "dayGridMonth";
+const calendar = new FullCalendar.Calendar(calendarEl, {
+  initialView: initialView,
+  height: "100%",
+  contentHeight: "auto",
+  stickyHeaderDates: true,
+  events: [],
+  datesSet: function () {
+  const titleEl = document.querySelector(".fc-toolbar-title");
+
+  if (titleEl && !document.getElementById("calendarLogo")) {
+    const wrapper = document.createElement("div");
+    wrapper.id = "titleLogoWrapper";
+    wrapper.style.display = "flex";
+    wrapper.style.alignItems = "center";
+    wrapper.style.justifyContent = "center";
+    wrapper.style.gap = "16px";
+    wrapper.style.width = "100%";
+
+    const logo = document.createElement("img");
+    logo.src = "/static/images/logo.png";
+    logo.alt = "Pittsburgh Events Logo";
+    logo.id = "calendarLogo";
+    logo.style.height = "100px";
+    logo.style.objectFit = "contain";
+
+    // Move title into wrapper and insert the wrapper in its place
+    const parent = titleEl.parentNode;
+    parent.replaceChild(wrapper, titleEl);
+    wrapper.appendChild(titleEl);
+    wrapper.appendChild(logo);
+
+    parent.style.display = "flex";
+    parent.style.justifyContent = "center";
+    parent.style.alignItems = "center";
+    parent.style.width = "100%";
+  }
+},
+eventContent: function(arg) {
+  const isMobile = window.matchMedia("(max-width: 767px)").matches;
+  const viewType = arg.view.type;
+
+  // On mobile in week or month view, show only the title
+  if (isMobile && (viewType === "timeGridWeek" || viewType === "dayGridMonth")) {
+    return { html: `<div class="fc-event-title">${arg.event.title}</div>` };
+  }
+
+  // Default rendering
+  return;
+},
+  views: {
+    threeDay: {
+      type: "timeGrid",
+      duration: { days: 3 },
+      buttonText: "3 day"
+    }
+  },
+  eventDisplay: "block",
+        eventDidMount: function (info) {
+          if (info.event.extendedProps.description) {
+            info.el.setAttribute("title", info.event.extendedProps.description);
+          }
+
+          const now = new Date();
+          const eventStart = new Date(info.event.start);
+          if (eventStart < now.setHours(0, 0, 0, 0)) {
+            info.el.classList.add("past-event");
+          }
+        }
+      });
+      calendar.render();
+	  document.getElementById("calendarViewSelect").addEventListener("change", function () {
+  previousView = calendar.view.type;
+  previousDate = calendar.getDate();
+  calendar.changeView(this.value);
+  backBtn.style.display = "none";  // Hide back button on manual change
+});
+let previousView = null;
+let previousDate = null;
+const backBtn = document.getElementById("backToPreviousViewBtn");
+
+calendar.setOption("dateClick", function(info) {
+  previousView = calendar.view.type;
+  previousDate = calendar.getDate();
+  calendar.changeView("timeGridDay", info.dateStr);
+  backBtn.style.display = "inline-block";
+});
+
+backBtn.addEventListener("click", () => {
+  if (previousView) {
+    calendar.changeView(previousView, previousDate);
+    previousView = null;
+    previousDate = null;
+  } else {
+    calendar.changeView("dayGridMonth");
+  }
+  backBtn.style.display = "none";
+});
+      function fetchFilteredEvents() {
+        fetch("/events")
+          .then(response => response.json())
+          .then(allEvents => {
+            const checkedSources = Array.from(document.querySelectorAll(".source-toggle:checked")).map(cb => cb.value);
+            const keyword = document.getElementById("searchInput").value.toLowerCase();
+            const filtered = allEvents.filter(event =>
+              checkedSources.includes(event.source) &&
+              (event.title.toLowerCase().includes(keyword) ||
+                (event.description && event.description.toLowerCase().includes(keyword)))
+            );
+
+            const colored = filtered.map(event => ({
+              ...event,
+              color: sourceColors[event.source] || "#999"
+            }));
+
+            calendar.removeAllEvents();
+            calendar.addEventSource(colored);
+          });
+      }
+
+      document.querySelectorAll(".source-toggle").forEach(cb => {
+        cb.addEventListener("change", fetchFilteredEvents);
+      });
+
+      document.getElementById("searchInput").addEventListener("input", fetchFilteredEvents);
+      document.getElementById("selectAllBtn").addEventListener("click", () => {
+        document.querySelectorAll(".source-toggle").forEach(cb => cb.checked = true);
+        fetchFilteredEvents();
+      });
+
+      document.getElementById("selectNoneBtn").addEventListener("click", () => {
+        document.querySelectorAll(".source-toggle").forEach(cb => cb.checked = false);
+        fetchFilteredEvents();
+      });
+
+      document.getElementById("visitPghMaster").addEventListener("change", function () {
+        const isChecked = this.checked;
+        document.querySelectorAll(".vp-sub").forEach(cb => cb.checked = isChecked);
+        fetchFilteredEvents();
+      });
+
+      document.getElementById("vpToggle").addEventListener("click", function () {
+        const section = document.getElementById("visitPghSubcategories");
+        section.style.display = section.style.display === "none" ? "block" : "none";
+        this.textContent = section.style.display === "block" ? "▲" : "▼";
+      });
+
+      document.querySelectorAll(".vp-sub").forEach(cb => {
+        cb.addEventListener("change", function () {
+          const all = Array.from(document.querySelectorAll(".vp-sub"));
+          const allChecked = all.every(cb => cb.checked);
+          const noneChecked = all.every(cb => !cb.checked);
+          const master = document.getElementById("visitPghMaster");
+          master.checked = allChecked;
+          master.indeterminate = !allChecked && !noneChecked;
+          fetchFilteredEvents();
+        });
+      });
+
+      fetchFilteredEvents();
+
+    const main = document.getElementById("main");
+if (isMobile) main.classList.remove("sidebar-open");
+else main.classList.add("sidebar-open");
+
+document.getElementById("toggleSidebar").addEventListener("click", function () {
+  main.classList.toggle("sidebar-open");
+  setTimeout(() => calendar.updateSize(), 300); // wait for sidebar animation to finish
+});
+    });
+  </script>
+  
+
+</body>
+</html>
