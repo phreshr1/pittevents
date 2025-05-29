@@ -35,12 +35,7 @@ def requires_auth(f):
     return decorated
 
 @app.route("/admin/feedback")
-@app.route("/admin/init-db")
-@requires_auth
-def init_db():
-    import shutil
-    shutil.copy("events.db", "/data/events.db")
-    return "✅ Copied local DB to persistent disk."
+
 @requires_auth
 def view_feedback():
     conn = sqlite3.connect("/data/events.db")
