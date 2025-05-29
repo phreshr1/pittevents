@@ -1,135 +1,5 @@
 [
   {
-    "title": "Gems of Pittsburgh Bike Tour",
-    "date": "2025-06-07T15:00:00",
-    "end": "2025-06-07T18:00:00",
-    "link": "https://www.visitpittsburgh.com/events/gems-of-pittsburgh-bike-tour/",
-    "description": "Address: Bike the Burgh Tours, 1049 Penn Ave, Pittsburgh, Pennsylvania 15222",
-    "source": "VisitPittsburgh - Family Fun",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Candlelight: A Tribute to Queen and More",
-    "date": "2025-06-07T18:30:00",
-    "end": "2025-06-07T19:45:00",
-    "link": "https://www.visitpittsburgh.com/events/candlelight-a-tribute-to-queen-and-more/",
-    "description": "Address: Trinity Episcopal Cathedral, 328 Sixth Avenue, Pittsburgh, Pennsylvania 15222",
-    "source": "VisitPittsburgh - Musical Performance",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "CherryBomb - The Nation's Premier Joan Jett Tribute Band",
-    "date": "2025-06-07T20:00:00",
-    "end": "2025-06-07T23:00:00",
-    "link": "https://www.visitpittsburgh.com/events/cherrybomb-the-nations-premier-joan-jett-tribute-band1/",
-    "description": "Address: The Tonidale Pub, 7001 Steubenville Pike, Oakdale, Pennsylvania 15071",
-    "source": "VisitPittsburgh - Musical Performance",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "CherryBomb - The Nation's Premier Joan Jett Tribute Band",
-    "date": "2025-06-07T20:00:00",
-    "end": "2025-06-07T23:00:00",
-    "link": "https://www.visitpittsburgh.com/events/cherrybomb-the-nations-premier-joan-jett-tribute-band/",
-    "description": "Address: The Tonidale Pub, 7001 Steubenville Pike, Oakdale, Pennsylvania 15071",
-    "source": "VisitPittsburgh - Musical Performance",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Candlelight: Coldplay & Imagine Dragons",
-    "date": "2025-06-07T20:45:00",
-    "end": "2025-06-07T22:00:00",
-    "link": "https://www.visitpittsburgh.com/events/candlelight-coldplay-imagine-dragons/",
-    "description": "Address: Trinity Episcopal Cathedral, 328 Sixth Avenue, Pittsburgh, Pennsylvania 15222",
-    "source": "VisitPittsburgh - Musical Performance",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Summer Music Series: Bill Deasy & Scott Blasey",
-    "date": "2025-06-08T18:00:00",
-    "end": "2025-06-08T20:00:00",
-    "link": "https://www.visitpittsburgh.com/events/summer-music-series-bill-deasy-scott-blasey/",
-    "description": "Address: 350 West Station Square Drive, Pittsburgh, Pennsylvania 15219",
-    "source": "VisitPittsburgh - Musical Performance",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Whiskey Wednesdays",
-    "date": "2025-06-11T18:00:00",
-    "end": "2025-06-11T20:00:00",
-    "link": "https://www.visitpittsburgh.com/events/whiskey-wednesdays-3/",
-    "description": "Address: West Overton Village, 109 W. Overton Road, Scottdale, Pennsylvania 15683",
-    "source": "VisitPittsburgh - Culinary",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Brushes & Birds: 21+ Penguin Edition",
-    "date": "2025-06-12T00:00:00",
-    "end": null,
-    "link": "https://www.visitpittsburgh.com/events/brushes-birds-21-penguin-edition/",
-    "description": "Address: National Aviary, 700 Arch Street, Pittsburgh, Pennsylvania 15212",
-    "source": "VisitPittsburgh - Family Fun",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Art Maze (Begins)",
-    "date": "2025-06-13",
-    "end": null,
-    "link": "https://www.visitpittsburgh.com/events/art-maze/",
-    "description": "Address: The Westmoreland Museum of American Art, 221 N. Main St., Greensburg, Pennsylvania 15601",
-    "source": "VisitPittsburgh - Family Fun",
-    "color": "#FFD700",
-    "allDay": 1
-  },
-  {
-    "title": "Art Maze (Ends)",
-    "date": "2025-08-17",
-    "end": null,
-    "link": "https://www.visitpittsburgh.com/events/art-maze/",
-    "description": "Address: The Westmoreland Museum of American Art, 221 N. Main St., Greensburg, Pennsylvania 15601",
-    "source": "VisitPittsburgh - Family Fun",
-    "color": "#FFD700",
-    "allDay": 1
-  },
-  {
-    "title": "Cane's Country Kid's Night Out",
-    "date": "2025-06-13T00:00:00",
-    "end": null,
-    "link": "https://www.visitpittsburgh.com/events/canes-country-kids-night-out/",
-    "description": "Address: 4655 William Flynn Highway, ALLISON PARK, Pennsylvania 15101",
-    "source": "VisitPittsburgh - Culinary",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Father\u2019s Day Weekend",
-    "date": "2025-06-13T00:00:00",
-    "end": null,
-    "link": "https://www.visitpittsburgh.com/events/fathers-day-weekend/",
-    "description": "Address: Nemacolin, 1001 Lafayette Dr, Farmington, Pennsylvania 15437",
-    "source": "VisitPittsburgh - Family Fun",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "HIGHLIGHTS OF THE HISTORIC WILLIAM PENN HOTEL",
-    "date": "2025-06-13T10:00:00",
-    "end": "2025-06-13T11:30:00",
-    "link": "https://www.visitpittsburgh.com/events/highlights-of-the-historic-william-penn-hotel/",
-    "description": "Address: Lobby, 530 William Penn Place, Lobby, 530 William Penn Place, Pittsburgh, Pittsburgh, Pennsylvania 15219",
-    "source": "VisitPittsburgh - Tours + Sightseeing",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
     "title": "The Mummy (1999)",
     "date": "2025-06-13T19:00:00",
     "end": "2025-06-13T21:00:00",
@@ -171,33 +41,33 @@
   },
   {
     "title": "Top Rope Anchor Building",
-    "date": "2025-06-14T00:00:00",
+    "date": "2025-06-14",
     "end": null,
     "link": "https://www.visitpittsburgh.com/events/top-rope-anchor-building-2/",
     "description": "Address: 2141 Mary St., Pittsburgh, Pennsylvania",
     "source": "VisitPittsburgh - Outdoor Adventure",
     "color": "#FFD700",
-    "allDay": 0
+    "allDay": 1
   },
   {
     "title": "Alabama (with special guest Jamey Johnson)",
-    "date": "2025-06-14T00:00:00",
+    "date": "2025-06-14",
     "end": null,
     "link": "https://www.visitpittsburgh.com/events/alabama-with-special-guest-jamey-johnson/",
     "description": "Address: Pittsburgh Brewing Company, 150 Ferry Street, Creighton, Pennsylvania 15030",
     "source": "VisitPittsburgh - Musical Performance",
     "color": "#FFD700",
-    "allDay": 0
+    "allDay": 1
   },
   {
     "title": "Babesburgh Bash",
-    "date": "2025-06-14T00:00:00",
+    "date": "2025-06-14",
     "end": null,
     "link": "https://www.visitpittsburgh.com/events/babesburgh-bash/",
     "description": "Address: Allegheny Landing Park, 3 Federal St Pittsburgh, Pa, Pittsburgh, Pennsylvania 15212",
     "source": "VisitPittsburgh - Festivals/Fairs/Parades",
     "color": "#FFD700",
-    "allDay": 0
+    "allDay": 1
   },
   {
     "title": "High Point National",
@@ -214,16 +84,6 @@
     "date": "2025-06-14T07:00:00",
     "end": "2025-06-14T21:00:00",
     "link": "https://www.visitpittsburgh.com/events/big-butler-parts-a-rama-2/",
-    "description": "Address: Big Butler Fairgrounds, 1127 New Castle Rd, Prospect , Pennsylvania 16052",
-    "source": "VisitPittsburgh - Family Fun",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Big Butler Parts A Rama",
-    "date": "2025-06-14T00:00:00",
-    "end": null,
-    "link": "https://www.visitpittsburgh.com/events/big-butler-parts-a-rama/",
     "description": "Address: Big Butler Fairgrounds, 1127 New Castle Rd, Prospect , Pennsylvania 16052",
     "source": "VisitPittsburgh - Family Fun",
     "color": "#FFD700",
@@ -291,13 +151,13 @@
   },
   {
     "title": "Paint your partner challenge",
-    "date": "2025-06-15T00:00:00",
+    "date": "2025-06-15",
     "end": null,
     "link": "https://www.visitpittsburgh.com/events/paint-your-partner-challenge/",
     "description": "Address: Hula Bar and Grill, 759 EAST RAILROAD AVEN, VERONA, Pennsylvania 15147",
     "source": "VisitPittsburgh - Visual Arts",
     "color": "#FFD700",
-    "allDay": 0
+    "allDay": 1
   },
   {
     "title": "THE OLD ALLEGHENY COUNTY JAIL AND MUSEUM--FREE",
@@ -310,22 +170,92 @@
     "allDay": 0
   },
   {
+    "title": "FIRECRACKER 100 AT LERNERVILLE SPEEDWAY",
+    "date": "2025-06-17T18:00:00",
+    "end": "2025-06-17T19:30:00",
+    "link": "https://www.visitpittsburgh.com/events/firecracker-100-at-lernerville-speedway/",
+    "description": "Address: Lernerville Speedway, 313 North Pike Road, Sarver, Pennsylvania 16055",
+    "source": "VisitPittsburgh - Sporting Events",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "FIRECRACKER 100 AT LERNERVILLE SPEEDWAY",
+    "date": "2025-06-18T18:00:00",
+    "end": "2025-06-18T19:30:00",
+    "link": "https://www.visitpittsburgh.com/events/firecracker-100-at-lernerville-speedway/",
+    "description": "Address: Lernerville Speedway, 313 North Pike Road, Sarver, Pennsylvania 16055",
+    "source": "VisitPittsburgh - Sporting Events",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "FIRECRACKER 100 AT LERNERVILLE SPEEDWAY",
+    "date": "2025-06-19T18:00:00",
+    "end": "2025-06-19T19:30:00",
+    "link": "https://www.visitpittsburgh.com/events/firecracker-100-at-lernerville-speedway/",
+    "description": "Address: Lernerville Speedway, 313 North Pike Road, Sarver, Pennsylvania 16055",
+    "source": "VisitPittsburgh - Sporting Events",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "FIRECRACKER 100 AT LERNERVILLE SPEEDWAY",
+    "date": "2025-06-20T18:00:00",
+    "end": "2025-06-20T19:30:00",
+    "link": "https://www.visitpittsburgh.com/events/firecracker-100-at-lernerville-speedway/",
+    "description": "Address: Lernerville Speedway, 313 North Pike Road, Sarver, Pennsylvania 16055",
+    "source": "VisitPittsburgh - Sporting Events",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "FIRECRACKER 100 AT LERNERVILLE SPEEDWAY",
+    "date": "2025-06-21T18:00:00",
+    "end": "2025-06-21T19:30:00",
+    "link": "https://www.visitpittsburgh.com/events/firecracker-100-at-lernerville-speedway/",
+    "description": "Address: Lernerville Speedway, 313 North Pike Road, Sarver, Pennsylvania 16055",
+    "source": "VisitPittsburgh - Sporting Events",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Encounter Conference 2025",
+    "date": "2025-06-18T17:00:00",
+    "end": "2025-06-18T21:00:00",
+    "link": "https://www.visitpittsburgh.com/events/encounter-conference-2025/",
+    "description": "Address: Victory Family Church, 21150 Rte. 19, Cranberry Twp, Pennsylvania 16066",
+    "source": "VisitPittsburgh - Family Fun",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Encounter Conference 2025",
+    "date": "2025-06-19T17:00:00",
+    "end": "2025-06-19T21:00:00",
+    "link": "https://www.visitpittsburgh.com/events/encounter-conference-2025/",
+    "description": "Address: Victory Family Church, 21150 Rte. 19, Cranberry Twp, Pennsylvania 16066",
+    "source": "VisitPittsburgh - Family Fun",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Encounter Conference 2025",
+    "date": "2025-06-20T17:00:00",
+    "end": "2025-06-20T21:00:00",
+    "link": "https://www.visitpittsburgh.com/events/encounter-conference-2025/",
+    "description": "Address: Victory Family Church, 21150 Rte. 19, Cranberry Twp, Pennsylvania 16066",
+    "source": "VisitPittsburgh - Family Fun",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
     "title": "A  Million Dreams - Support Youth Arts!",
     "date": "2025-06-18T17:30:00",
     "end": "2025-06-18T20:30:00",
     "link": "https://www.visitpittsburgh.com/events/a-million-dreams-support-youth-arts/",
     "description": "Address: Greystone Fields, 4085 Sandy Hill Rd, Gibsonia , Pennsylvania 15044",
     "source": "VisitPittsburgh - Fundraiser",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Trolley Tots",
-    "date": "2025-06-19T00:00:00",
-    "end": null,
-    "link": "https://www.visitpittsburgh.com/events/trolley-tots/",
-    "description": "Address: Pennsylvania Trolley Museum, 1 Electric Way, Washington, Pennsylvania 15301",
-    "source": "VisitPittsburgh - Family Fun",
     "color": "#FFD700",
     "allDay": 0
   },
@@ -430,6 +360,106 @@
     "allDay": 0
   },
   {
+    "title": "Sister Act The Musical",
+    "date": "2025-06-20T19:30:00",
+    "end": "2025-06-20T16:30:00",
+    "link": "https://www.visitpittsburgh.com/events/sister-act-the-musical/",
+    "description": "Address: Lincoln Park Performing Arts Center, 1 Lincoln Park, Midland, Pennsylvania 15059",
+    "source": "VisitPittsburgh - Theater",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Sister Act The Musical",
+    "date": "2025-06-21T19:30:00",
+    "end": "2025-06-21T16:30:00",
+    "link": "https://www.visitpittsburgh.com/events/sister-act-the-musical/",
+    "description": "Address: Lincoln Park Performing Arts Center, 1 Lincoln Park, Midland, Pennsylvania 15059",
+    "source": "VisitPittsburgh - Theater",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Sister Act The Musical",
+    "date": "2025-06-22T19:30:00",
+    "end": "2025-06-22T16:30:00",
+    "link": "https://www.visitpittsburgh.com/events/sister-act-the-musical/",
+    "description": "Address: Lincoln Park Performing Arts Center, 1 Lincoln Park, Midland, Pennsylvania 15059",
+    "source": "VisitPittsburgh - Theater",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Sister Act The Musical",
+    "date": "2025-06-23T19:30:00",
+    "end": "2025-06-23T16:30:00",
+    "link": "https://www.visitpittsburgh.com/events/sister-act-the-musical/",
+    "description": "Address: Lincoln Park Performing Arts Center, 1 Lincoln Park, Midland, Pennsylvania 15059",
+    "source": "VisitPittsburgh - Theater",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Sister Act The Musical",
+    "date": "2025-06-24T19:30:00",
+    "end": "2025-06-24T16:30:00",
+    "link": "https://www.visitpittsburgh.com/events/sister-act-the-musical/",
+    "description": "Address: Lincoln Park Performing Arts Center, 1 Lincoln Park, Midland, Pennsylvania 15059",
+    "source": "VisitPittsburgh - Theater",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Sister Act The Musical",
+    "date": "2025-06-25T19:30:00",
+    "end": "2025-06-25T16:30:00",
+    "link": "https://www.visitpittsburgh.com/events/sister-act-the-musical/",
+    "description": "Address: Lincoln Park Performing Arts Center, 1 Lincoln Park, Midland, Pennsylvania 15059",
+    "source": "VisitPittsburgh - Theater",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Sister Act The Musical",
+    "date": "2025-06-26T19:30:00",
+    "end": "2025-06-26T16:30:00",
+    "link": "https://www.visitpittsburgh.com/events/sister-act-the-musical/",
+    "description": "Address: Lincoln Park Performing Arts Center, 1 Lincoln Park, Midland, Pennsylvania 15059",
+    "source": "VisitPittsburgh - Theater",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Sister Act The Musical",
+    "date": "2025-06-27T19:30:00",
+    "end": "2025-06-27T16:30:00",
+    "link": "https://www.visitpittsburgh.com/events/sister-act-the-musical/",
+    "description": "Address: Lincoln Park Performing Arts Center, 1 Lincoln Park, Midland, Pennsylvania 15059",
+    "source": "VisitPittsburgh - Theater",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Sister Act The Musical",
+    "date": "2025-06-28T19:30:00",
+    "end": "2025-06-28T16:30:00",
+    "link": "https://www.visitpittsburgh.com/events/sister-act-the-musical/",
+    "description": "Address: Lincoln Park Performing Arts Center, 1 Lincoln Park, Midland, Pennsylvania 15059",
+    "source": "VisitPittsburgh - Theater",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Sister Act The Musical",
+    "date": "2025-06-29T19:30:00",
+    "end": "2025-06-29T16:30:00",
+    "link": "https://www.visitpittsburgh.com/events/sister-act-the-musical/",
+    "description": "Address: Lincoln Park Performing Arts Center, 1 Lincoln Park, Midland, Pennsylvania 15059",
+    "source": "VisitPittsburgh - Theater",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
     "title": "Social Destruction - Celebrating the Music of Social Distortion",
     "date": "2025-06-20T20:00:00",
     "end": "2025-06-20T23:00:00",
@@ -441,23 +471,23 @@
   },
   {
     "title": "Intro To Outdoor Climbing + Rappelling",
-    "date": "2025-06-21T00:00:00",
+    "date": "2025-06-21",
     "end": null,
     "link": "https://www.visitpittsburgh.com/events/intro-to-outdoor-climbing-rappelling-3/",
     "description": "Address: 2141 Mary St., Pittsburgh, Pennsylvania",
     "source": "VisitPittsburgh - Outdoor Adventure",
     "color": "#FFD700",
-    "allDay": 0
+    "allDay": 1
   },
   {
     "title": "Pride Prom",
-    "date": "2025-06-21T00:00:00",
+    "date": "2025-06-21",
     "end": null,
     "link": "https://www.visitpittsburgh.com/events/pride-prom/",
     "description": "Address: The Westmoreland Museum of American Art, 221 N. Main St., Greensburg, Pennsylvania 15601",
     "source": "VisitPittsburgh - Family Fun",
     "color": "#FFD700",
-    "allDay": 0
+    "allDay": 1
   },
   {
     "title": "Sweetwater Blooms Market",
@@ -476,6 +506,226 @@
     "link": "https://www.visitpittsburgh.com/events/2025-shriners-sportsmans-bash/",
     "description": "Address: Pittsburgh Shrine Center, 1877 Shriners Way, Cheswick, Pennsylvania 15024",
     "source": "VisitPittsburgh - Fundraiser",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Freedom Farms Berry Festival",
+    "date": "2025-06-21T11:00:00",
+    "end": "2025-06-21T17:00:00",
+    "link": "https://www.visitpittsburgh.com/events/freedom-farms-berry-festival/",
+    "description": "Address: Freedom Farms, 434 Overbrook Road, Valencia, Pennsylvania 16059",
+    "source": "VisitPittsburgh - Outdoor Adventure",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Freedom Farms Berry Festival",
+    "date": "2025-06-22T11:00:00",
+    "end": "2025-06-22T17:00:00",
+    "link": "https://www.visitpittsburgh.com/events/freedom-farms-berry-festival/",
+    "description": "Address: Freedom Farms, 434 Overbrook Road, Valencia, Pennsylvania 16059",
+    "source": "VisitPittsburgh - Outdoor Adventure",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "The Dinner Detective Comedy Mystery Dinner Show",
+    "date": "2025-06-21T18:00:00",
+    "end": "2025-06-21T21:00:00",
+    "link": "https://www.visitpittsburgh.com/events/the-dinner-detective-comedy-mystery-dinner-show-4/",
+    "description": "Address: Omni William Penn, 530 William Penn Pl, Pittsburgh, Pennsylvania 15219",
+    "source": "VisitPittsburgh - Comedy",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Jurassic Park (1993)",
+    "date": "2025-06-21T19:00:00",
+    "end": "2025-06-21T21:00:00",
+    "link": "https://www.visitpittsburgh.com/events/jurassic-park-1993/",
+    "description": "Address: The Rangos Giant Cinema, One Allegheny Ave., Pittsburgh, Pennsylvania 15212",
+    "source": "VisitPittsburgh - Film",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Burn the Jukebox at The Lamp Theatre, Irwin",
+    "date": "2025-06-21T20:00:00",
+    "end": "2025-06-21T22:30:00",
+    "link": "https://www.visitpittsburgh.com/events/burn-the-jukebox-at-the-lamp-theatre-irwin/",
+    "description": "Address: The Lamp Theatre, 222 Main Street, Irwin, Pennsylvania 15642",
+    "source": "VisitPittsburgh - Musical Performance",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Birdwatching Kayak Tour with L.L.Bean",
+    "date": "2025-06-22T09:00:00",
+    "end": "2025-06-22T12:00:00",
+    "link": "https://www.visitpittsburgh.com/events/birdwatching-kayak-tour-with-llbean/",
+    "description": "Address: North Park Lake, 700 Arch St., Pittsburgh, Pennsylvania",
+    "source": "VisitPittsburgh - Tours + Sightseeing",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Rodfathers Annual Cruise-A-Palooza",
+    "date": "2025-06-22T10:00:00",
+    "end": "2025-06-22T16:00:00",
+    "link": "https://www.visitpittsburgh.com/events/rodfathers-annual-cruise-a-palooza/",
+    "description": "Address: Downtown Butler, Main Street, Butler, Pennsylvania 16001",
+    "source": "VisitPittsburgh - Family Fun",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "PGHwrites: Marcus Rediker \u201cFreedom Ship\u201d (Book Launch)",
+    "date": "2025-06-22T15:00:00",
+    "end": "2025-06-22T16:00:00",
+    "link": "https://www.visitpittsburgh.com/events/pghwrites-marcus-rediker-freedom-ship-book-launch/",
+    "description": "Address: Alphabet City, 40 W. North Avenue, Pittsburgh, Pennsylvania 15212",
+    "source": "VisitPittsburgh - Workshops/Seminars/Lectures",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Pittsburgh Thunderbirds vs Carolina Flyers",
+    "date": "2025-06-22T16:00:00",
+    "end": "2025-06-22T18:30:00",
+    "link": "https://www.visitpittsburgh.com/events/pittsburgh-thunderbirds-vs-carolina-flyers/",
+    "description": "Address: Highmark Stadium, 510 W. Station Square Dr., Pittsburgh, Pennsylvania 15219",
+    "source": "VisitPittsburgh - Sporting Events",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Summer Music Series: The JT Project- James Taylor Tribute",
+    "date": "2025-06-22T18:00:00",
+    "end": "2025-06-22T20:00:00",
+    "link": "https://www.visitpittsburgh.com/events/summer-music-series-the-jt-project-james-taylor-tribute/",
+    "description": "Address: 350 West Station Square Drive, Pittsburgh, Pennsylvania 15219",
+    "source": "VisitPittsburgh - Musical Performance",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Sound Series: An Evening with Buffalo Nichols",
+    "date": "2025-06-23T20:00:00",
+    "end": "2025-06-23T22:00:00",
+    "link": "https://www.visitpittsburgh.com/events/sound-series-an-evening-with-buffalo-nichols/",
+    "description": "Address: The Andy Warhol Museum, 117 Sandusky Street, Pittsburgh, Pennsylvania 15212",
+    "source": "VisitPittsburgh - Musical Performance",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Saxonburg Carnival",
+    "date": "2025-06-24T18:00:00",
+    "end": "2025-06-24T23:00:00",
+    "link": "https://www.visitpittsburgh.com/events/saxonburg-carnival/",
+    "description": "Address: Saxonburg Volunteer Fire Company Carnival Grounds, 290 Horne Ave, Saxonburg , Pennsylvania 16056",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Saxonburg Carnival",
+    "date": "2025-06-25T18:00:00",
+    "end": "2025-06-25T23:00:00",
+    "link": "https://www.visitpittsburgh.com/events/saxonburg-carnival/",
+    "description": "Address: Saxonburg Volunteer Fire Company Carnival Grounds, 290 Horne Ave, Saxonburg , Pennsylvania 16056",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Saxonburg Carnival",
+    "date": "2025-06-26T18:00:00",
+    "end": "2025-06-26T23:00:00",
+    "link": "https://www.visitpittsburgh.com/events/saxonburg-carnival/",
+    "description": "Address: Saxonburg Volunteer Fire Company Carnival Grounds, 290 Horne Ave, Saxonburg , Pennsylvania 16056",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Saxonburg Carnival",
+    "date": "2025-06-27T18:00:00",
+    "end": "2025-06-27T23:00:00",
+    "link": "https://www.visitpittsburgh.com/events/saxonburg-carnival/",
+    "description": "Address: Saxonburg Volunteer Fire Company Carnival Grounds, 290 Horne Ave, Saxonburg , Pennsylvania 16056",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Saxonburg Carnival",
+    "date": "2025-06-28T18:00:00",
+    "end": "2025-06-28T23:00:00",
+    "link": "https://www.visitpittsburgh.com/events/saxonburg-carnival/",
+    "description": "Address: Saxonburg Volunteer Fire Company Carnival Grounds, 290 Horne Ave, Saxonburg , Pennsylvania 16056",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Single Mothers w/ Mercy Union",
+    "date": "2025-06-24T19:00:00",
+    "end": "2025-06-24T22:00:00",
+    "link": "https://www.visitpittsburgh.com/events/single-mothers-w-mercy-union/",
+    "description": "Address: The Smiling Moose, 1306 E Carson St, Pittsburgh, Pennsylvania 15203",
+    "source": "VisitPittsburgh - Performing Arts",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Phish: Summer 2025 Tour",
+    "date": "2025-06-24T19:30:00",
+    "end": "2025-06-24T23:00:00",
+    "link": "https://www.visitpittsburgh.com/events/phish-summer-2025-tour/",
+    "description": "Address: Petersen Events Center, 3719 Terrace Street, PIttsburgh, Pennsylvania 15261",
+    "source": "VisitPittsburgh - Musical Performance",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Jazz in the Garden (Begins)",
+    "date": "2025-06-26",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/jazz-in-the-garden/",
+    "description": "Address: Phipps Conservatory and Botanical Gardens, One Schenley Dr., Pittsburgh, Pennsylvania 15213",
+    "source": "VisitPittsburgh - Musical Performance",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Jazz in the Garden (Ends)",
+    "date": "2025-09-19",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/jazz-in-the-garden/",
+    "description": "Address: Phipps Conservatory and Botanical Gardens, One Schenley Dr., Pittsburgh, Pennsylvania 15213",
+    "source": "VisitPittsburgh - Musical Performance",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "American Pie Emo Night w/ Thomas Nicholas Band",
+    "date": "2025-06-26T20:00:00",
+    "end": "2025-06-26T22:00:00",
+    "link": "https://www.visitpittsburgh.com/events/american-pie-emo-night-w-thomas-nicholas-band1/",
+    "description": "Address: The Smiling Moose, 1306 E Carson St, Pittsburgh, Pennsylvania 15203",
+    "source": "VisitPittsburgh - Musical Performance",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "American Pie Emo Night w/ Thomas Nicholas Band",
+    "date": "2025-06-26T20:00:00",
+    "end": "2025-06-26T22:00:00",
+    "link": "https://www.visitpittsburgh.com/events/american-pie-emo-night-w-thomas-nicholas-band/",
+    "description": "Address: The Smiling Moose, 1306 E Carson St, Pittsburgh, Pennsylvania 15203",
+    "source": "VisitPittsburgh - Musical Performance",
     "color": "#FFD700",
     "allDay": 0
   }

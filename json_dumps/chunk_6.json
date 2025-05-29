@@ -1,165 +1,5 @@
 [
   {
-    "title": "Steelers vs. Buccaneers (Preseason)",
-    "date": "2025-08-16T19:00:00",
-    "end": "2025-08-16T23:30:00",
-    "link": "https://www.visitpittsburgh.com/events/steelers-vs-buccaneers-preseason/",
-    "description": "Address: Acrisure Stadium, 100 Art Rooney Ave, Pittsburgh, Pennsylvania 15212",
-    "source": "VisitPittsburgh - Sporting Events",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "THE OLD ALLEGHENY COUNTY JAIL AND MUSEUM--FREE",
-    "date": "2025-08-18T11:30:00",
-    "end": "2025-08-18T13:00:00",
-    "link": "https://www.visitpittsburgh.com/events/the-old-allegheny-county-jail-and-museum-free-9/",
-    "description": "Address: 440 ROSS STREET, PITTSBURGH, PA  15219, 440 ROSS STREET, PITTSBURGH, PA  15219, PITTSBURGH, Pennsylvania 15219",
-    "source": "VisitPittsburgh - History + Heritage",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "WOOD STREET",
-    "date": "2025-08-22T10:00:00",
-    "end": "2025-08-22T11:30:00",
-    "link": "https://www.visitpittsburgh.com/events/wood-street/",
-    "description": "Address: Outside entrance Point Park Center for Media Innovation 14 Wood St., Outside entrance Point Park Center for Media Innovation 14 Wood Street, Pittsburgh, Pennsylvania 15222",
-    "source": "VisitPittsburgh - Tours + Sightseeing",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Audio Workshop: Mixing & the Concepts of Jamaican Dub",
-    "date": "2025-08-23T10:00:00",
-    "end": "2025-08-23T16:00:00",
-    "link": "https://www.visitpittsburgh.com/events/audio-workshop-mixing-the-concepts-of-jamaican-dub/",
-    "description": "Address: PearlArts Movement & Sound, 818 Braddock Ave, Braddock, Pennsylvania 15104",
-    "source": "VisitPittsburgh - Workshops/Seminars/Lectures",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "5k Beer Run x Strange Roots | 2025 PA Brewery Running Series",
-    "date": "2025-08-23T11:00:00",
-    "end": "2025-08-23T13:00:00",
-    "link": "https://www.visitpittsburgh.com/events/5k-beer-run-x-strange-roots-2025-pa-brewery-running-series/",
-    "description": "Address: Strange Roots Experimental Ales, 501 East Ohio Street, Millvale, Pennsylvania  15209",
-    "source": "VisitPittsburgh - Sports Competitions + Tournaments",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "The Jaggerz & Carpool - #1 Tribute to The Cars",
-    "date": "2025-08-23T19:00:00",
-    "end": "2025-08-23T22:00:00",
-    "link": "https://www.visitpittsburgh.com/events/the-jaggerz-carpool-1-tribute-to-the-cars1/",
-    "description": "Address: Cadence Clubhouse, 9999 Kummer Rd, Allison Park, Pennsylvania 15101",
-    "source": "VisitPittsburgh - Performing Arts",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "The Jaggerz & Carpool - #1 Tribute to The Cars",
-    "date": "2025-08-23T19:00:00",
-    "end": "2025-08-23T22:00:00",
-    "link": "https://www.visitpittsburgh.com/events/the-jaggerz-carpool-1-tribute-to-the-cars/",
-    "description": "Address: Cadence Clubhouse, 9999 Kummer Rd, Allison Park, Pennsylvania 15101",
-    "source": "VisitPittsburgh - Performing Arts",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "The Suns of Beaches Band - A Tribute to Jimmy Buffett",
-    "date": "2025-08-23T20:00:00",
-    "end": "2025-08-23T23:00:00",
-    "link": "https://www.visitpittsburgh.com/events/the-suns-of-beaches-band-a-tribute-to-jimmy-buffett/",
-    "description": "Address: The Tonidale Pub, 7001 Steubenville Pike, Oakdale, Pennsylvania 15071",
-    "source": "VisitPittsburgh - Musical Performance",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "UPMC Health Plan PedalPGH: BikePGH's Annual Fundraiser Ride",
-    "date": "2025-08-24T07:00:00",
-    "end": "2025-08-24T15:00:00",
-    "link": "https://www.visitpittsburgh.com/events/upmc-health-plan-pedalpgh-bikepghs-annual-fundraiser-ride/",
-    "description": "Address: ",
-    "source": "VisitPittsburgh - Family Fun",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Summer Music Series: The Key West Express- Jimmy Buffet Tribute",
-    "date": "2025-08-24T18:00:00",
-    "end": "2025-08-24T20:00:00",
-    "link": "https://www.visitpittsburgh.com/events/summer-music-series-the-key-west-express-jimmy-buffet-tribute/",
-    "description": "Address: 350 West Station Square Drive, Pittsburgh, Pennsylvania 15219",
-    "source": "VisitPittsburgh - Musical Performance",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Summer Fridays at the Frick: 80's Music and Beyond",
-    "date": "2025-08-29T17:00:00",
-    "end": "2025-08-29T21:00:00",
-    "link": "https://www.visitpittsburgh.com/events/summer-fridays-at-the-frick-80s-music-and-beyond/",
-    "description": "Address: The Frick Pittsburgh, 7227 Reynolds St., Pittsburgh, Pennsylvania 15208",
-    "source": "VisitPittsburgh - Family Fun",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Bon Journey - The Best of Bon Jovi & Journey",
-    "date": "2025-08-29T19:00:00",
-    "end": "2025-08-29T22:00:00",
-    "link": "https://www.visitpittsburgh.com/events/bon-journey-the-best-of-bon-jovi-journey/",
-    "description": "Address: Cadence Clubhouse, 9999 Kummer Rd, Allison Park, Pennsylvania 15101",
-    "source": "VisitPittsburgh - Performing Arts",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Against The Wind: A Bob Seger Experience",
-    "date": "2025-08-30T19:00:00",
-    "end": "2025-08-30T22:00:00",
-    "link": "https://www.visitpittsburgh.com/events/against-the-wind-a-bob-seger-experience/",
-    "description": "Address: Cadence Clubhouse, 9999 Kummer Rd, Allison Park, Pennsylvania 15101",
-    "source": "VisitPittsburgh - Musical Performance",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "The Polkamanaics - Pittsburgh Polka Madness",
-    "date": "2025-08-30T20:00:00",
-    "end": "2025-08-30T23:00:00",
-    "link": "https://www.visitpittsburgh.com/events/the-polkamanaics-pittsburgh-polka-madness1/",
-    "description": "Address: The Tonidale Pub, 7001 Steubenville Pike, Oakdale, Pennsylvania 15071",
-    "source": "VisitPittsburgh - Musical Performance",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "The Polkamanaics - Pittsburgh Polka Madness",
-    "date": "2025-08-30T20:00:00",
-    "end": "2025-08-30T23:00:00",
-    "link": "https://www.visitpittsburgh.com/events/the-polkamanaics-pittsburgh-polka-madness/",
-    "description": "Address: The Tonidale Pub, 7001 Steubenville Pike, Oakdale, Pennsylvania 15071",
-    "source": "VisitPittsburgh - Musical Performance",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Luicidal (Featuring OG Suicidal Tendencies Members)",
-    "date": "2025-08-31T20:00:00",
-    "end": "2025-08-31T22:00:00",
-    "link": "https://www.visitpittsburgh.com/events/luicidal-featuring-og-suicidal-tendencies-members1/",
-    "description": "Address: The Smiling Moose, 1306 E Carson St, Pittsburgh, Pennsylvania 15203",
-    "source": "VisitPittsburgh - Musical Performance",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
     "title": "Luicidal (Featuring OG Suicidal Tendencies Members)",
     "date": "2025-08-31T20:00:00",
     "end": "2025-08-31T22:00:00",
@@ -200,6 +40,76 @@
     "allDay": 0
   },
   {
+    "title": "Three Rivers Sightseeing Cruise",
+    "date": "2025-09-05",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/three-rivers-sightseeing-cruise/",
+    "description": "Address: Gateway Clipper Fleet, 350 West Station Square Drive, Pittsburgh, Pennsylvania 15219",
+    "source": "VisitPittsburgh - Tours + Sightseeing",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Pittsburgh Lebanese Festival",
+    "date": "2025-09-05",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/pittsburgh-lebanese-festival/",
+    "description": "Address: Our Lady of Victory Maronite Church, 1000 Tropical Avenue, PITTSBURGH, Pennsylvania 15216",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Pittsburgh Lebanese Festival",
+    "date": "2025-09-06",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/pittsburgh-lebanese-festival/",
+    "description": "Address: Our Lady of Victory Maronite Church, 1000 Tropical Avenue, PITTSBURGH, Pennsylvania 15216",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Pittsburgh Lebanese Festival",
+    "date": "2025-09-07",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/pittsburgh-lebanese-festival/",
+    "description": "Address: Our Lady of Victory Maronite Church, 1000 Tropical Avenue, PITTSBURGH, Pennsylvania 15216",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Sprankle's Octoberfest",
+    "date": "2025-09-05T16:00:00",
+    "end": "2025-09-05T18:00:00",
+    "link": "https://www.visitpittsburgh.com/events/sprankles-octoberfest/",
+    "description": "Address: Lernerville Speedway, 313 N Pike Rd, Sarver , Pennsylvania 16055",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Sprankle's Octoberfest",
+    "date": "2025-09-06T16:00:00",
+    "end": "2025-09-06T18:00:00",
+    "link": "https://www.visitpittsburgh.com/events/sprankles-octoberfest/",
+    "description": "Address: Lernerville Speedway, 313 N Pike Rd, Sarver , Pennsylvania 16055",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Sprankle's Octoberfest",
+    "date": "2025-09-07T16:00:00",
+    "end": "2025-09-07T18:00:00",
+    "link": "https://www.visitpittsburgh.com/events/sprankles-octoberfest/",
+    "description": "Address: Lernerville Speedway, 313 N Pike Rd, Sarver , Pennsylvania 16055",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
     "title": "Skyline Dinner Cruise & Tour",
     "date": "2025-09-05T18:30:00",
     "end": "2025-09-05T20:30:00",
@@ -210,12 +120,42 @@
     "allDay": 0
   },
   {
+    "title": "Throwback Moonlight Dance Cruise & Tour",
+    "date": "2025-09-05",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/throwback-moonlight-dance-cruise-tour/",
+    "description": "Address: Gateway Clipper Fleet, 350 W Station Square Drive, Pittsburgh, Pennsylvania 15219",
+    "source": "VisitPittsburgh - Tours + Sightseeing",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
     "title": "Captain's Dinner Cruise & Tour",
     "date": "2025-09-06T18:30:00",
     "end": "2025-09-06T21:00:00",
     "link": "https://www.visitpittsburgh.com/events/captains-dinner-cruise-tour/",
     "description": "Address: Gateway Clipper Fleet, 350 W Station Square Drive, Pittsburgh, Pennsylvania 15219",
     "source": "VisitPittsburgh - Tours + Sightseeing",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Saxonburg Arts Festival",
+    "date": "2025-09-07T10:00:00",
+    "end": "2025-09-07T16:00:00",
+    "link": "https://www.visitpittsburgh.com/events/saxonburg-arts-festival/",
+    "description": "Address: Downtown Saxonburg, Main Street, Saxonburg, Pennsylvania 16056",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Saxonburg Arts Festival",
+    "date": "2025-09-08T10:00:00",
+    "end": "2025-09-08T16:00:00",
+    "link": "https://www.visitpittsburgh.com/events/saxonburg-arts-festival/",
+    "description": "Address: Downtown Saxonburg, Main Street, Saxonburg, Pennsylvania 16056",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
     "color": "#FFD700",
     "allDay": 0
   },
@@ -236,16 +176,6 @@
     "link": "https://www.visitpittsburgh.com/events/whiskey-wednesdays-6/",
     "description": "Address: West Overton Village, 109 W. Overton Road, Scottdale, Pennsylvania 15683",
     "source": "VisitPittsburgh - Culinary",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "BBQ Lock & Dam Dinner Cruise & Tour",
-    "date": "2025-09-11T19:00:00",
-    "end": "2025-09-11T21:30:00",
-    "link": "https://www.visitpittsburgh.com/events/bbq-lock-dam-dinner-cruise-tour/",
-    "description": "Address: Gateway Clipper Fleet, 350 W Station Square Drive, Pittsburgh, Pennsylvania 15219",
-    "source": "VisitPittsburgh - Tours + Sightseeing",
     "color": "#FFD700",
     "allDay": 0
   },
@@ -380,6 +310,16 @@
     "allDay": 0
   },
   {
+    "title": "Arte y Cultura: Costa Rica Fundraising Gala",
+    "date": "2025-09-20",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/arte-y-cultura-costa-rica-fundraising-gala/",
+    "description": "Address: Latin American Cultural Center, 4338 Bigelow Blvd, Pittsburgh, Pennsylvania 15213",
+    "source": "VisitPittsburgh - Fundraiser",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
     "title": "Sweetwater Blooms Market",
     "date": "2025-09-20T09:00:00",
     "end": "2025-09-20T13:00:00",
@@ -418,5 +358,255 @@
     "source": "VisitPittsburgh - Musical Performance",
     "color": "#FFD700",
     "allDay": 0
+  },
+  {
+    "title": "Back & Forth - The Foo Fighters Tribute",
+    "date": "2025-09-20T20:00:00",
+    "end": "2025-09-20T23:00:00",
+    "link": "https://www.visitpittsburgh.com/events/back-forth-the-foo-fighters-tribute/",
+    "description": "Address: The Tonidale Pub, 7001 Steubenville Pike, Oakdale, Pennsylvania 15071",
+    "source": "VisitPittsburgh - Musical Performance",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Casanova & The Divas - The Dance & Party Band",
+    "date": "2025-09-20T20:00:00",
+    "end": "2025-09-20T23:00:00",
+    "link": "https://www.visitpittsburgh.com/events/casanova-the-divas-the-dance-party-band/",
+    "description": "Address: The Tonidale Pub, 7001 Steubenville Pike, Oakdale, Pennsylvania 15071",
+    "source": "VisitPittsburgh - Musical Performance",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Sunday Fun Day: Hispanic Heritage Month Celebration",
+    "date": "2025-09-21T10:00:00",
+    "end": "2025-09-21T15:00:00",
+    "link": "https://www.visitpittsburgh.com/events/sunday-fun-day-hispanic-heritage-month-celebration/",
+    "description": "Address: The Westmoreland Museum of American Art, 221 N. Main St., Greensburg , Pennsylvania 15601",
+    "source": "VisitPittsburgh - Family Fun",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Fall Migration Festival",
+    "date": "2025-09-21T12:00:00",
+    "end": "2025-09-21T16:00:00",
+    "link": "https://www.visitpittsburgh.com/events/fall-migration-festival/",
+    "description": "Address: Stormy Oaks Nature Conservancy, 120 Forsythe Road, Valencia , Pennsylvania 16059",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Shallow Side",
+    "date": "2025-09-23T19:00:00",
+    "end": "2025-09-23T22:00:00",
+    "link": "https://www.visitpittsburgh.com/events/shallow-side/",
+    "description": "Address: The Smiling Moose, 1306 E Carson St, Pittsburgh, Pennsylvania 15203",
+    "source": "VisitPittsburgh - Musical Performance",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Yoga Power Retreat: Discover the Magic of Yoga",
+    "date": "2025-09-25",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/yoga-power-retreat-discover-the-magic-of-yoga/",
+    "description": "Address: Nemacolin, 1001 Lafayette Drive, Farmington, Pennsylvania 15437",
+    "source": "VisitPittsburgh - Family Fun",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Yoga Power Retreat: Discover the Magic of Yoga",
+    "date": "2025-09-26",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/yoga-power-retreat-discover-the-magic-of-yoga/",
+    "description": "Address: Nemacolin, 1001 Lafayette Drive, Farmington, Pennsylvania 15437",
+    "source": "VisitPittsburgh - Family Fun",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Yoga Power Retreat: Discover the Magic of Yoga",
+    "date": "2025-09-27",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/yoga-power-retreat-discover-the-magic-of-yoga/",
+    "description": "Address: Nemacolin, 1001 Lafayette Drive, Farmington, Pennsylvania 15437",
+    "source": "VisitPittsburgh - Family Fun",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Yoga Power Retreat: Discover the Magic of Yoga",
+    "date": "2025-09-28",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/yoga-power-retreat-discover-the-magic-of-yoga/",
+    "description": "Address: Nemacolin, 1001 Lafayette Drive, Farmington, Pennsylvania 15437",
+    "source": "VisitPittsburgh - Family Fun",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "HISTORIC ALCOA BUILDING",
+    "date": "2025-09-26T10:30:00",
+    "end": "2025-09-26T11:30:00",
+    "link": "https://www.visitpittsburgh.com/events/historic-alcoa-building/",
+    "description": "Address: Lobby, 611 William Penn Place, Lobby, 611 William Penn Place, Pittsburgh, Pittsburgh, Pennsylvania 15219",
+    "source": "VisitPittsburgh - Tours + Sightseeing",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Haunted Three Rivers Cruise",
+    "date": "2025-09-26T18:30:00",
+    "end": "2025-09-26T20:00:00",
+    "link": "https://www.visitpittsburgh.com/events/haunted-three-rivers-cruise/",
+    "description": "Address: Gateway Clipper Fleet, 350 West Station Square Drive, Pittsburgh, Pennsylvania 15219",
+    "source": "VisitPittsburgh - Tours + Sightseeing",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Silver Springs - The Fleetwood Mac Experience",
+    "date": "2025-09-26T19:00:00",
+    "end": "2025-09-26T22:00:00",
+    "link": "https://www.visitpittsburgh.com/events/silver-springs-the-fleetwood-mac-experience/",
+    "description": "Address: Cadence Clubhouse, 9999 Kummer Rd, Allison Park, Pennsylvania 15101",
+    "source": "VisitPittsburgh - Musical Performance",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Sunrise Tours at Frank Lloyd Wright's Kentuck Knob",
+    "date": "2025-09-27T06:00:00",
+    "end": "2025-09-27T07:30:00",
+    "link": "https://www.visitpittsburgh.com/events/sunrise-tours-at-frank-lloyd-wrights-kentuck-knob1/",
+    "description": "Address: Frank Lloyd Wright's Kentuck Knob, 723 Kentuck Road, Chalk Hill, Pennsylvania 15421",
+    "source": "VisitPittsburgh - Tours + Sightseeing",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "HISTORIC HARMONY",
+    "date": "2025-09-27T10:00:00",
+    "end": "2025-09-27T12:00:00",
+    "link": "https://www.visitpittsburgh.com/events/historic-harmony/",
+    "description": "Address: 218 Mercer Street, 218 Mercer Street, Harmony, PA, Harmony, PA, Pennsylvania 16037",
+    "source": "VisitPittsburgh - Tours + Sightseeing",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Paris Affair",
+    "date": "2025-09-27T11:00:00",
+    "end": "2025-09-27T17:00:00",
+    "link": "https://www.visitpittsburgh.com/events/paris-affair/",
+    "description": "Address: Riverside Landing, 12 Washington Ave, Oakmont, Pennsylvania 15139",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Butler Fall Festival",
+    "date": "2025-09-27T11:00:00",
+    "end": "2025-09-27T18:00:00",
+    "link": "https://www.visitpittsburgh.com/events/butler-fall-festival/",
+    "description": "Address: Downtown Butler, Main Street, Butler, Pennsylvania 16001",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Freedom Farms Maized & Confused",
+    "date": "2025-09-27T15:00:00",
+    "end": "2025-09-27T20:00:00",
+    "link": "https://www.visitpittsburgh.com/events/freedom-farms-maized-confused/",
+    "description": "Address: Freedom Farms, 434 Overbrook Road, Valencia , Pennsylvania 16059",
+    "source": "VisitPittsburgh - Outdoor Adventure",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Original Zucco Bubblegum Band - Hits of the 60s & 70s",
+    "date": "2025-09-27T20:00:00",
+    "end": "2025-09-27T23:00:00",
+    "link": "https://www.visitpittsburgh.com/events/original-zucco-bubblegum-band-hits-of-the-60s-70s1/",
+    "description": "Address: The Tonidale Pub, 7001 Steubenville Pike, Oakdale, Pennsylvania 15071",
+    "source": "VisitPittsburgh - Musical Performance",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Original Zucco Bubblegum Band - Hits of the 60s & 70s",
+    "date": "2025-09-27T20:00:00",
+    "end": "2025-09-27T23:00:00",
+    "link": "https://www.visitpittsburgh.com/events/original-zucco-bubblegum-band-hits-of-the-60s-70s/",
+    "description": "Address: The Tonidale Pub, 7001 Steubenville Pike, Oakdale, Pennsylvania 15071",
+    "source": "VisitPittsburgh - Musical Performance",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Fall Apple Fest",
+    "date": "2025-10-04T08:00:00",
+    "end": "2025-10-04T16:00:00",
+    "link": "https://www.visitpittsburgh.com/events/fall-apple-fest/",
+    "description": "Address: Portersville Steam Show Grounds, 1512 Perry Hwy., Portersville , Pennsylvania 16051",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Fall Apple Fest",
+    "date": "2025-10-05T08:00:00",
+    "end": "2025-10-05T16:00:00",
+    "link": "https://www.visitpittsburgh.com/events/fall-apple-fest/",
+    "description": "Address: Portersville Steam Show Grounds, 1512 Perry Hwy., Portersville , Pennsylvania 16051",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "ALLEGHENY WEST HISTORIC DISTRICT",
+    "date": "2025-10-04T10:00:00",
+    "end": "2025-10-04T12:00:00",
+    "link": "https://www.visitpittsburgh.com/events/allegheny-west-historic-district/",
+    "description": "Address: Park at Brighton Road & Western Avenue, Park at Brighton Road & Western Avenue, Pittsburgh, Pittsburgh, Pennsylvania 15212",
+    "source": "VisitPittsburgh - Tours + Sightseeing",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Pittsburgh's Rivers of Fire",
+    "date": "2025-10-04T11:00:00",
+    "end": "2025-10-04T18:00:00",
+    "link": "https://www.visitpittsburgh.com/events/pittsburghs-rivers-of-fire/",
+    "description": "Address: Velum Fermentation, 2120 Jane Street, Pittsburgh, Pennsylvania 15203",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Freedom Farms Fall Fest (Begins)",
+    "date": "2025-10-04",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/freedom-farms-fall-fest/",
+    "description": "Address: Freedom Farms, 434 Overbrook Road, Valencia , Pennsylvania 16059",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Freedom Farms Fall Fest (Ends)",
+    "date": "2025-10-26",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/freedom-farms-fall-fest/",
+    "description": "Address: Freedom Farms, 434 Overbrook Road, Valencia , Pennsylvania 16059",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
   }
 ]

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback Submissions</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; }
+    .entry { border-bottom: 1px solid #ccc; margin-bottom: 1rem; padding-bottom: 1rem; }
+    .timestamp { font-size: 0.85em; color: #888; }
+  </style>
+</head>
+<body>
+  <h1>Feedback Submissions</h1>
+  {% for email, message, timestamp in feedback %}
+    <div class="entry">
+      <div class="timestamp">{{ timestamp }}</div>
+      <div><strong>Email:</strong> {{ email or 'Anonymous' }}</div>
+      <div><strong>Message:</strong><br>{{ message }}</div>
+    </div>
+  {% endfor %}
+</body>
+</html>

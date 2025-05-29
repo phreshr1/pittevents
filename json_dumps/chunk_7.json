@@ -1,175 +1,5 @@
 [
   {
-    "title": "Back & Forth - The Foo Fighters Tribute",
-    "date": "2025-09-20T20:00:00",
-    "end": "2025-09-20T23:00:00",
-    "link": "https://www.visitpittsburgh.com/events/back-forth-the-foo-fighters-tribute/",
-    "description": "Address: The Tonidale Pub, 7001 Steubenville Pike, Oakdale, Pennsylvania 15071",
-    "source": "VisitPittsburgh - Musical Performance",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Casanova & The Divas - The Dance & Party Band",
-    "date": "2025-09-20T20:00:00",
-    "end": "2025-09-20T23:00:00",
-    "link": "https://www.visitpittsburgh.com/events/casanova-the-divas-the-dance-party-band/",
-    "description": "Address: The Tonidale Pub, 7001 Steubenville Pike, Oakdale, Pennsylvania 15071",
-    "source": "VisitPittsburgh - Musical Performance",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Sunday Fun Day: Hispanic Heritage Month Celebration",
-    "date": "2025-09-21T10:00:00",
-    "end": "2025-09-21T15:00:00",
-    "link": "https://www.visitpittsburgh.com/events/sunday-fun-day-hispanic-heritage-month-celebration/",
-    "description": "Address: The Westmoreland Museum of American Art, 221 N. Main St., Greensburg , Pennsylvania 15601",
-    "source": "VisitPittsburgh - Family Fun",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Fall Migration Festival",
-    "date": "2025-09-21T12:00:00",
-    "end": "2025-09-21T16:00:00",
-    "link": "https://www.visitpittsburgh.com/events/fall-migration-festival/",
-    "description": "Address: Stormy Oaks Nature Conservancy, 120 Forsythe Road, Valencia , Pennsylvania 16059",
-    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Shallow Side",
-    "date": "2025-09-23T19:00:00",
-    "end": "2025-09-23T22:00:00",
-    "link": "https://www.visitpittsburgh.com/events/shallow-side/",
-    "description": "Address: The Smiling Moose, 1306 E Carson St, Pittsburgh, Pennsylvania 15203",
-    "source": "VisitPittsburgh - Musical Performance",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "HISTORIC ALCOA BUILDING",
-    "date": "2025-09-26T10:30:00",
-    "end": "2025-09-26T11:30:00",
-    "link": "https://www.visitpittsburgh.com/events/historic-alcoa-building/",
-    "description": "Address: Lobby, 611 William Penn Place, Lobby, 611 William Penn Place, Pittsburgh, Pittsburgh, Pennsylvania 15219",
-    "source": "VisitPittsburgh - Tours + Sightseeing",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Haunted Three Rivers Cruise",
-    "date": "2025-09-26T18:30:00",
-    "end": "2025-09-26T20:00:00",
-    "link": "https://www.visitpittsburgh.com/events/haunted-three-rivers-cruise/",
-    "description": "Address: Gateway Clipper Fleet, 350 West Station Square Drive, Pittsburgh, Pennsylvania 15219",
-    "source": "VisitPittsburgh - Tours + Sightseeing",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Silver Springs - The Fleetwood Mac Experience",
-    "date": "2025-09-26T19:00:00",
-    "end": "2025-09-26T22:00:00",
-    "link": "https://www.visitpittsburgh.com/events/silver-springs-the-fleetwood-mac-experience/",
-    "description": "Address: Cadence Clubhouse, 9999 Kummer Rd, Allison Park, Pennsylvania 15101",
-    "source": "VisitPittsburgh - Musical Performance",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Sunrise Tours at Frank Lloyd Wright's Kentuck Knob",
-    "date": "2025-09-27T06:00:00",
-    "end": "2025-09-27T07:30:00",
-    "link": "https://www.visitpittsburgh.com/events/sunrise-tours-at-frank-lloyd-wrights-kentuck-knob1/",
-    "description": "Address: Frank Lloyd Wright's Kentuck Knob, 723 Kentuck Road, Chalk Hill, Pennsylvania 15421",
-    "source": "VisitPittsburgh - Tours + Sightseeing",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "HISTORIC HARMONY",
-    "date": "2025-09-27T10:00:00",
-    "end": "2025-09-27T12:00:00",
-    "link": "https://www.visitpittsburgh.com/events/historic-harmony/",
-    "description": "Address: 218 Mercer Street, 218 Mercer Street, Harmony, PA, Harmony, PA, Pennsylvania 16037",
-    "source": "VisitPittsburgh - Tours + Sightseeing",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Paris Affair",
-    "date": "2025-09-27T11:00:00",
-    "end": "2025-09-27T17:00:00",
-    "link": "https://www.visitpittsburgh.com/events/paris-affair/",
-    "description": "Address: Riverside Landing, 12 Washington Ave, Oakmont, Pennsylvania 15139",
-    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Butler Fall Festival",
-    "date": "2025-09-27T11:00:00",
-    "end": "2025-09-27T18:00:00",
-    "link": "https://www.visitpittsburgh.com/events/butler-fall-festival/",
-    "description": "Address: Downtown Butler, Main Street, Butler, Pennsylvania 16001",
-    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Freedom Farms Maized & Confused",
-    "date": "2025-09-27T15:00:00",
-    "end": "2025-09-27T20:00:00",
-    "link": "https://www.visitpittsburgh.com/events/freedom-farms-maized-confused/",
-    "description": "Address: Freedom Farms, 434 Overbrook Road, Valencia , Pennsylvania 16059",
-    "source": "VisitPittsburgh - Outdoor Adventure",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Original Zucco Bubblegum Band - Hits of the 60s & 70s",
-    "date": "2025-09-27T20:00:00",
-    "end": "2025-09-27T23:00:00",
-    "link": "https://www.visitpittsburgh.com/events/original-zucco-bubblegum-band-hits-of-the-60s-70s1/",
-    "description": "Address: The Tonidale Pub, 7001 Steubenville Pike, Oakdale, Pennsylvania 15071",
-    "source": "VisitPittsburgh - Musical Performance",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Original Zucco Bubblegum Band - Hits of the 60s & 70s",
-    "date": "2025-09-27T20:00:00",
-    "end": "2025-09-27T23:00:00",
-    "link": "https://www.visitpittsburgh.com/events/original-zucco-bubblegum-band-hits-of-the-60s-70s/",
-    "description": "Address: The Tonidale Pub, 7001 Steubenville Pike, Oakdale, Pennsylvania 15071",
-    "source": "VisitPittsburgh - Musical Performance",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "ALLEGHENY WEST HISTORIC DISTRICT",
-    "date": "2025-10-04T10:00:00",
-    "end": "2025-10-04T12:00:00",
-    "link": "https://www.visitpittsburgh.com/events/allegheny-west-historic-district/",
-    "description": "Address: Park at Brighton Road & Western Avenue, Park at Brighton Road & Western Avenue, Pittsburgh, Pittsburgh, Pennsylvania 15212",
-    "source": "VisitPittsburgh - Tours + Sightseeing",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
-    "title": "Pittsburgh's Rivers of Fire",
-    "date": "2025-10-04T11:00:00",
-    "end": "2025-10-04T18:00:00",
-    "link": "https://www.visitpittsburgh.com/events/pittsburghs-rivers-of-fire/",
-    "description": "Address: Velum Fermentation, 2120 Jane Street, Pittsburgh, Pennsylvania 15203",
-    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
-    "color": "#FFD700",
-    "allDay": 0
-  },
-  {
     "title": "Dancing Queen - Pittsburgh's Hottest 70s & 80s Disco, Funk & Dance Band",
     "date": "2025-10-04T20:00:00",
     "end": "2025-10-04T23:00:00",
@@ -220,12 +50,52 @@
     "allDay": 0
   },
   {
-    "title": "Magic Pumpkin Trolley",
+    "title": "Bantam Trailfest",
+    "date": "2025-10-10T00:00:00",
+    "end": "2025-10-10T23:00:00",
+    "link": "https://www.visitpittsburgh.com/events/bantam-trailfest/",
+    "description": "Address: Bantam Quarry at Kildoo, 989 Kildoo Road, Portersville , Pennsylvania 16051",
+    "source": "VisitPittsburgh - Outdoor Adventure",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Bantam Trailfest",
+    "date": "2025-10-11T00:00:00",
+    "end": "2025-10-11T23:00:00",
+    "link": "https://www.visitpittsburgh.com/events/bantam-trailfest/",
+    "description": "Address: Bantam Quarry at Kildoo, 989 Kildoo Road, Portersville , Pennsylvania 16051",
+    "source": "VisitPittsburgh - Outdoor Adventure",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Bantam Trailfest",
+    "date": "2025-10-12T00:00:00",
+    "end": "2025-10-12T23:00:00",
+    "link": "https://www.visitpittsburgh.com/events/bantam-trailfest/",
+    "description": "Address: Bantam Quarry at Kildoo, 989 Kildoo Road, Portersville , Pennsylvania 16051",
+    "source": "VisitPittsburgh - Outdoor Adventure",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Zelienople Fall Festival",
     "date": "2025-10-10T10:00:00",
-    "end": "2025-10-10T17:00:00",
-    "link": "https://www.visitpittsburgh.com/events/magic-pumpkin-trolley/",
-    "description": "Address: Pennsylvania Trolley Museum, 1 Electric Way, Washington, Pennsylvania 15301",
-    "source": "VisitPittsburgh - Family Fun",
+    "end": "2025-10-10T16:00:00",
+    "link": "https://www.visitpittsburgh.com/events/zelienople-fall-festival/",
+    "description": "Address: Downtown Zelienople, Main Street, Zelienople , Pennsylvania 16063",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Zelienople Fall Festival",
+    "date": "2025-10-11T10:00:00",
+    "end": "2025-10-11T16:00:00",
+    "link": "https://www.visitpittsburgh.com/events/zelienople-fall-festival/",
+    "description": "Address: Downtown Zelienople, Main Street, Zelienople , Pennsylvania 16063",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
     "color": "#FFD700",
     "allDay": 0
   },
@@ -236,6 +106,26 @@
     "link": "https://www.visitpittsburgh.com/events/bus-tour-visit-three-historic-carnegie-libraries/",
     "description": "Address: Meet at Station Square, Meet at Station Square, Pittsburgh, PA, Pittsburgh, PA  15219, Pennsylvania 15219",
     "source": "VisitPittsburgh - Tours + Sightseeing",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Sleepy Hollow Festival",
+    "date": "2025-10-11T10:00:00",
+    "end": "2025-10-11T16:00:00",
+    "link": "https://www.visitpittsburgh.com/events/sleepy-hollow-festival/",
+    "description": "Address: The Center of Harmony, 253 Mercer St, Harmony , Pennsylvania 16037",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Sleepy Hollow Festival",
+    "date": "2025-10-12T10:00:00",
+    "end": "2025-10-12T16:00:00",
+    "link": "https://www.visitpittsburgh.com/events/sleepy-hollow-festival/",
+    "description": "Address: The Center of Harmony, 253 Mercer St, Harmony , Pennsylvania 16037",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
     "color": "#FFD700",
     "allDay": 0
   },
@@ -370,6 +260,46 @@
     "allDay": 0
   },
   {
+    "title": "Pittsburgh Coffee & Chocolate Festival",
+    "date": "2025-10-25T11:00:00",
+    "end": "2025-10-25T19:00:00",
+    "link": "https://www.visitpittsburgh.com/events/pittsburgh-coffee-chocolate-festival-1/",
+    "description": "Address: Monroeville Convention Center, 209 Mall Boulevard, Monroeville , Pennsylvania 15146",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Pittsburgh Coffee & Chocolate Festival",
+    "date": "2025-10-26T11:00:00",
+    "end": "2025-10-26T19:00:00",
+    "link": "https://www.visitpittsburgh.com/events/pittsburgh-coffee-chocolate-festival-1/",
+    "description": "Address: Monroeville Convention Center, 209 Mall Boulevard, Monroeville , Pennsylvania 15146",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Pittsburgh Coffee & Chocolate Festival",
+    "date": "2025-10-25T11:00:00",
+    "end": "2025-10-25T19:00:00",
+    "link": "https://www.visitpittsburgh.com/events/pittsburgh-coffee-chocolate-festival/",
+    "description": "Address: Monroeville Convention Center, 209 Mall Boulevard, Monroeville , Pennsylvania 15146",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Pittsburgh Coffee & Chocolate Festival",
+    "date": "2025-10-26T11:00:00",
+    "end": "2025-10-26T19:00:00",
+    "link": "https://www.visitpittsburgh.com/events/pittsburgh-coffee-chocolate-festival/",
+    "description": "Address: Monroeville Convention Center, 209 Mall Boulevard, Monroeville , Pennsylvania 15146",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
     "title": "Last Train to Ozz - The Off the Rails Tribute to Ozzy",
     "date": "2025-10-25T20:00:00",
     "end": "2025-10-25T23:00:00",
@@ -390,6 +320,16 @@
     "allDay": 0
   },
   {
+    "title": "Steelers vs Packers",
+    "date": "2025-10-26",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/steelers-vs-packers/",
+    "description": "Address: Acrisure Stadium, 100 Art Rooney Ave, Pittsburgh, Pennsylvania 15212",
+    "source": "VisitPittsburgh - Sporting Events",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
     "title": "GRANT STREET",
     "date": "2025-10-31T10:00:00",
     "end": "2025-10-31T12:00:00",
@@ -408,5 +348,355 @@
     "source": "VisitPittsburgh - Comedy",
     "color": "#FFD700",
     "allDay": 0
+  },
+  {
+    "title": "Bon Journey - Playing the Best of Journey & Bon Jovi",
+    "date": "2025-11-01T20:00:00",
+    "end": "2025-11-01T23:00:00",
+    "link": "https://www.visitpittsburgh.com/events/bon-journey-playing-the-best-of-journey-bon-jovi/",
+    "description": "Address: The Tonidale Pub, 7001 Steubenville Pike, Oakdale, Pennsylvania 15071",
+    "source": "VisitPittsburgh - Musical Performance",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Steelers vs Colts",
+    "date": "2025-11-02T13:00:00",
+    "end": "2025-11-02T17:00:00",
+    "link": "https://www.visitpittsburgh.com/events/steelers-vs-colts/",
+    "description": "Address: Acrisure Stadium, 100 Art Rooney Ave, Pittsburgh, Pennsylvania 15212",
+    "source": "VisitPittsburgh - Sporting Events",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "The Global Impact Forum (TGIF)",
+    "date": "2025-11-03T08:00:00",
+    "end": "2025-11-03T17:00:00",
+    "link": "https://www.visitpittsburgh.com/events/the-global-impact-forum-tgif/",
+    "description": "Address: David L. Lawrence Convention Center, 1000 Fort Duquesne Blvd, Pittsburgh, Pennsylvania 15222",
+    "source": "VisitPittsburgh - Workshops/Seminars/Lectures",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "The Global Impact Forum (TGIF)",
+    "date": "2025-11-04T08:00:00",
+    "end": "2025-11-04T17:00:00",
+    "link": "https://www.visitpittsburgh.com/events/the-global-impact-forum-tgif/",
+    "description": "Address: David L. Lawrence Convention Center, 1000 Fort Duquesne Blvd, Pittsburgh, Pennsylvania 15222",
+    "source": "VisitPittsburgh - Workshops/Seminars/Lectures",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "The Global Impact Forum (TGIF)",
+    "date": "2025-11-05T08:00:00",
+    "end": "2025-11-05T17:00:00",
+    "link": "https://www.visitpittsburgh.com/events/the-global-impact-forum-tgif/",
+    "description": "Address: David L. Lawrence Convention Center, 1000 Fort Duquesne Blvd, Pittsburgh, Pennsylvania 15222",
+    "source": "VisitPittsburgh - Workshops/Seminars/Lectures",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "THE OLD ALLEGHENY COUNTY JAIL AND MUSEUM--FREE",
+    "date": "2025-11-03T11:30:00",
+    "end": "2025-11-03T13:00:00",
+    "link": "https://www.visitpittsburgh.com/events/the-old-allegheny-county-jail-and-museum-free-14/",
+    "description": "Address: 440 ROSS STREET, PITTSBURGH, PA  15219, 440 ROSS STREET, PITTSBURGH, PA  15219, PITTSBURGH, Pennsylvania 15219",
+    "source": "VisitPittsburgh - History + Heritage",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Dancing Queen - Pittsburgh's Hottest 70s & 80s Disco, Funk & Dance Band",
+    "date": "2025-11-07T19:00:00",
+    "end": "2025-11-07T22:00:00",
+    "link": "https://www.visitpittsburgh.com/events/dancing-queen-pittsburghs-hottest-70s-80s-disco-funk-dance-band-5/",
+    "description": "Address: Cadence Clubhouse, 9999 Kummer Rd, Allison Park, Pennsylvania 15101",
+    "source": "VisitPittsburgh - Musical Performance",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Dancing Queen - Pittsburgh's Hottest 70s & 80s Disco, Funk & Dance Band",
+    "date": "2025-11-07T19:00:00",
+    "end": "2025-11-07T22:00:00",
+    "link": "https://www.visitpittsburgh.com/events/dancing-queen-pittsburghs-hottest-70s-80s-disco-funk-dance-band-4/",
+    "description": "Address: Cadence Clubhouse, 9999 Kummer Rd, Allison Park, Pennsylvania 15101",
+    "source": "VisitPittsburgh - Musical Performance",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Comedy Bingo Night!",
+    "date": "2025-11-08T21:00:00",
+    "end": "2025-11-08T22:30:00",
+    "link": "https://www.visitpittsburgh.com/events/comedy-bingo-night/",
+    "description": "Address: Arcade Comedy Theater, 943 Liberty Ave, Pittsburgh, Pennsylvania 15222",
+    "source": "VisitPittsburgh - Comedy",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Three Rivers Film Festival",
+    "date": "2025-11-12",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/three-rivers-film-festival/",
+    "description": "Address: 1789 S. Braddock Ave., Pittsburgh, Pennsylvania",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Three Rivers Film Festival",
+    "date": "2025-11-13",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/three-rivers-film-festival/",
+    "description": "Address: 1789 S. Braddock Ave., Pittsburgh, Pennsylvania",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Three Rivers Film Festival",
+    "date": "2025-11-14",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/three-rivers-film-festival/",
+    "description": "Address: 1789 S. Braddock Ave., Pittsburgh, Pennsylvania",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Three Rivers Film Festival",
+    "date": "2025-11-15",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/three-rivers-film-festival/",
+    "description": "Address: 1789 S. Braddock Ave., Pittsburgh, Pennsylvania",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Three Rivers Film Festival",
+    "date": "2025-11-16",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/three-rivers-film-festival/",
+    "description": "Address: 1789 S. Braddock Ave., Pittsburgh, Pennsylvania",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Three Rivers Film Festival",
+    "date": "2025-11-17",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/three-rivers-film-festival/",
+    "description": "Address: 1789 S. Braddock Ave., Pittsburgh, Pennsylvania",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Three Rivers Film Festival",
+    "date": "2025-11-18",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/three-rivers-film-festival/",
+    "description": "Address: 1789 S. Braddock Ave., Pittsburgh, Pennsylvania",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Three Rivers Film Festival",
+    "date": "2025-11-19",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/three-rivers-film-festival/",
+    "description": "Address: 1789 S. Braddock Ave., Pittsburgh, Pennsylvania",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Three Rivers Film Festival",
+    "date": "2025-11-20",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/three-rivers-film-festival/",
+    "description": "Address: 1789 S. Braddock Ave., Pittsburgh, Pennsylvania",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Three Rivers Film Festival",
+    "date": "2025-11-21",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/three-rivers-film-festival/",
+    "description": "Address: 1789 S. Braddock Ave., Pittsburgh, Pennsylvania",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Three Rivers Film Festival",
+    "date": "2025-11-22",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/three-rivers-film-festival/",
+    "description": "Address: 1789 S. Braddock Ave., Pittsburgh, Pennsylvania",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Three Rivers Film Festival",
+    "date": "2025-11-23",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/three-rivers-film-festival/",
+    "description": "Address: 1789 S. Braddock Ave., Pittsburgh, Pennsylvania",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Fellow Travelers",
+    "date": "2025-11-14T19:00:00",
+    "end": "2025-11-14T21:00:00",
+    "link": "https://www.visitpittsburgh.com/events/fellow-travelers/",
+    "description": "Address: Byham Theater, 101 6th Street, Pittsburgh, Pennsylvania 15222",
+    "source": "VisitPittsburgh - Musical Performance",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Mental Health Conference 2025- PubScholars Group",
+    "date": "2025-11-15T08:00:00",
+    "end": "2025-11-15T18:00:00",
+    "link": "https://www.visitpittsburgh.com/events/mental-health-conference-2025-pubscholars-group/",
+    "description": "Address: Rosen Plaza Hotel, Orlando, Florida, USA, Rosen Plaza Hotel, Orlando, Florida, USA, Orlando, Pennsylvania 32789",
+    "source": "VisitPittsburgh - Workshops/Seminars/Lectures",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Mental Health Conference 2025- PubScholars Group",
+    "date": "2025-11-16T08:00:00",
+    "end": "2025-11-16T18:00:00",
+    "link": "https://www.visitpittsburgh.com/events/mental-health-conference-2025-pubscholars-group/",
+    "description": "Address: Rosen Plaza Hotel, Orlando, Florida, USA, Rosen Plaza Hotel, Orlando, Florida, USA, Orlando, Pennsylvania 32789",
+    "source": "VisitPittsburgh - Workshops/Seminars/Lectures",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Totally 80s",
+    "date": "2025-11-15T20:00:00",
+    "end": "2025-11-15T23:00:00",
+    "link": "https://www.visitpittsburgh.com/events/totally-80s/",
+    "description": "Address: The Tonidale Pub, 7001 Steubenville Pike, Oakdale, Pennsylvania 15071",
+    "source": "VisitPittsburgh - Musical Performance",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Steelers vs Bengals",
+    "date": "2025-11-16T13:00:00",
+    "end": "2025-11-16T17:00:00",
+    "link": "https://www.visitpittsburgh.com/events/steelers-vs-bengals/",
+    "description": "Address: Acrisure Stadium, 100 Art Rooney Ave, Pittsburgh, Pennsylvania 15212",
+    "source": "VisitPittsburgh - Sporting Events",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "THE OLD ALLEGHENY COUNTY JAIL AND MUSEUM--FREE",
+    "date": "2025-11-17T11:30:00",
+    "end": "2025-11-17T13:00:00",
+    "link": "https://www.visitpittsburgh.com/events/the-old-allegheny-county-jail-and-museum-free-15/",
+    "description": "Address: 440 ROSS STREET, PITTSBURGH, PA  15219, 440 ROSS STREET, PITTSBIURGH, PA  15219, PITTSBURGH, Pennsylvania 15219",
+    "source": "VisitPittsburgh - History + Heritage",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Pittsburgh Shorts Film Festival",
+    "date": "2025-11-20",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/pittsburgh-shorts-film-festival/",
+    "description": "Address: 1789 S. Braddock Ave., Pittsburgh, Pennsylvania",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Pittsburgh Shorts Film Festival",
+    "date": "2025-11-21",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/pittsburgh-shorts-film-festival/",
+    "description": "Address: 1789 S. Braddock Ave., Pittsburgh, Pennsylvania",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Pittsburgh Shorts Film Festival",
+    "date": "2025-11-22",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/pittsburgh-shorts-film-festival/",
+    "description": "Address: 1789 S. Braddock Ave., Pittsburgh, Pennsylvania",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Pittsburgh Shorts Film Festival",
+    "date": "2025-11-23",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/pittsburgh-shorts-film-festival/",
+    "description": "Address: 1789 S. Braddock Ave., Pittsburgh, Pennsylvania",
+    "source": "VisitPittsburgh - Festivals/Fairs/Parades",
+    "color": "#FFD700",
+    "allDay": 1
+  },
+  {
+    "title": "Free Exhibition Opening: Ting Tong Chang",
+    "date": "2025-11-21T18:00:00",
+    "end": "2025-11-21T20:00:00",
+    "link": "https://www.visitpittsburgh.com/events/free-exhibition-opening-ting-tong-chang/",
+    "description": "Address: Mattress Factory Museum of Contemporary Art, 509 Jacksonia St., Pittsburgh, Pennsylvania 15212",
+    "source": "VisitPittsburgh - Visual Arts",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Light Up Night Dinner Cruise & Tour",
+    "date": "2025-11-22T19:30:00",
+    "end": "2025-11-22T22:00:00",
+    "link": "https://www.visitpittsburgh.com/events/light-up-night-dinner-cruise-tour/",
+    "description": "Address: Gateway Clipper Fleet, 350 W Station Square Drive, Pittsburgh, Pennsylvania 15219",
+    "source": "VisitPittsburgh - Tours + Sightseeing",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Gillie Brothers Band",
+    "date": "2025-11-22T20:00:00",
+    "end": "2025-11-22T23:00:00",
+    "link": "https://www.visitpittsburgh.com/events/gillie-brothers-band-2/",
+    "description": "Address: The Tonidale Pub, 7001 Steubenville Pike, Oakdale, Pennsylvania 15071",
+    "source": "VisitPittsburgh - Musical Performance",
+    "color": "#FFD700",
+    "allDay": 0
+  },
+  {
+    "title": "Thanksgiving Feast",
+    "date": "2025-11-27",
+    "end": null,
+    "link": "https://www.visitpittsburgh.com/events/thanksgiving-feast/",
+    "description": "Address: Nemacolin, 1001 Lafayette Drive, Farmington, Pennsylvania 15437",
+    "source": "VisitPittsburgh - Family Fun",
+    "color": "#FFD700",
+    "allDay": 1
   }
 ]

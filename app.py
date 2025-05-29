@@ -1,4 +1,8 @@
 from flask import Flask, render_template, jsonify, request
+from flask import Response
+from datetime import datetime
+from functools import wraps
+from flask import request
 import sqlite3
 import os
 
@@ -9,6 +13,36 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+def check_auth(username, password):
+    return (
+        username == os.environ.get("ADMIN_USER") and
+        password == os.environ.get("ADMIN_PASS")
+    )
+
+def authenticate():
+    return Response(
+        "Authentication required", 401,
+        {"WWW-Authenticate": 'Basic realm="Login Required"'}
+    )
+
+def requires_auth(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        auth = request.authorization
+        if not auth or not check_auth(auth.username, auth.password):
+            return authenticate()
+        return f(*args, **kwargs)
+    return decorated
+
+@app.route("/admin/feedback")
+@requires_auth
+def view_feedback():
+    conn = sqlite3.connect("events.db")
+    cursor = conn.cursor()
+    cursor.execute("SELECT email, message, timestamp FROM feedback ORDER BY timestamp DESC")
+    entries = cursor.fetchall()
+    conn.close()
+    return render_template("feedback_list.html", feedback=entries)
 @app.route("/about")
 def about():
     return render_template("about.html")
@@ -18,9 +52,14 @@ def submit_feedback():
     email = request.form.get("email", "")
     message = request.form.get("message")
 
-    # Save to text file
-    with open("feedback.txt", "a") as f:
-        f.write(f"Email: {email}\nMessage: {message}\n---\n")
+    conn = sqlite3.connect("events.db")
+    cursor = conn.cursor()
+    cursor.execute("""
+        INSERT INTO feedback (email, message, timestamp)
+        VALUES (?, ?, ?)
+    """, (email, message, datetime.now().isoformat()))
+    conn.commit()
+    conn.close()
 
     return render_template("about.html", submitted=True)
 @app.route("/events")

@@ -10,6 +10,10 @@ import re
 import multiprocessing as mp
 import json
 import os
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+import multiprocess as mp
 
 CHUNK_SIZE = 50
 RESUME_FILE = "visitpittsburgh_resume.json"
@@ -19,6 +23,36 @@ URL = "https://www.visitpittsburgh.com/events-festivals/?hitsPerPage=400"
 
 discrete_pattern = r"(\w{3} \d{1,2}, \d{4}),\s*(\d{1,2}:\d{2}[ap]m)\s*to\s*(\d{1,2}:\d{2}[ap]m)"
 fallback_pattern = r"(\d{1,2}:\d{2}\s*[APMapm]{2})\s*(?:to|–|-)\s*(\d{1,2}:\d{2}\s*[APMapm]{2})"
+
+def safe_extract_target(q, event):
+    try:
+        from visitpittsburgh_scraper_true_allday import extract_times_from_detail
+        result = extract_times_from_detail(
+            event["link"],
+            event["start_date"],
+            event["end_date"],
+            event["category"],
+            event["title"]
+        )
+        q.put(result)
+    except Exception:
+        q.put(([], None))
+
+def safe_extract(event, timeout=20):
+    from multiprocessing import Process, Queue
+
+    q = Queue()
+    p = Process(target=safe_extract_target, args=(q, event))
+    p.start()
+    p.join(timeout)
+
+    if p.is_alive():
+        print(f"[⛔] Timeout — killing hung event: {event['title']}")
+        p.terminate()
+        p.join()
+        return [], None
+
+    return q.get() if not q.empty() else ([], None)
 
 def create_driver():
     options = Options()
@@ -38,21 +72,35 @@ def extract_times_from_detail(url, start_date=None, end_date=None, category=None
 
         try:
             driver.get(url)
-            time.sleep(2)
+            WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+            soup = BeautifulSoup(driver.page_source, "html.parser")
+            all_text = soup.get_text(" ", strip=True)
+            driver.quit()
         except TimeoutException:
-            print(f"[⏱️] Timeout loading: {url}")
+            print(f"[⏱️] Timeout while waiting for page to load: {url}")
             driver.quit()
             raise
 
-        soup = BeautifulSoup(driver.page_source, "html.parser")
-        all_text = soup.get_text(" ", strip=True)
-        driver.quit()
-
     except Exception as e:
-        print(f"[❌] Failed to load event page: {title} → {e}")
+        print(f"[❌] Selenium failed for {title} → {e}")
+        print("[🌐] Trying requests fallback...")
+
         try:
-            with open("skipped_events.txt", "a") as log:
-                log.write(f"{title}\t{url}\n")
+            import requests
+            headers = {"User-Agent": "Mozilla/5.0"}
+            response = requests.get(url, headers=headers, timeout=10)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.text, "html.parser")
+            all_text = soup.get_text(" ", strip=True)
+        except Exception as e2:
+            print(f"[⚠️] Unable to load usable content for: {title}")
+            print(f"[💤] Skipping: probably a JavaScript-only or protected page.")
+            try:
+                with open("skipped_events.txt", "a", encoding="utf-8") as log:
+                    log.write(f"{title}\t{url}\n")
+            except Exception as log_err:
+                print(f"[📝] Could not write to skipped_events.txt: {log_err}")
+            return [], None
         except:
             pass
         return [], None
@@ -195,16 +243,18 @@ def extract_event_data(card):
         return None
 
 def worker(event):
-    times, exhibit_flag = extract_times_from_detail(
-        event["link"],
-        event["start_date"],
-        event["end_date"],
-        event["category"],
-        event["title"]
-    )
-    print(f"[👀] {event['title']} → times={times}, exhibit_flag={exhibit_flag}")
+    times, exhibit_flag = safe_extract(event)
+
     if not times:
-        print(f"[⚠️] SKIPPING {event['title']} — no valid time info extracted.")
+        print(f"[⚠️] SKIPPING {event['title']} — no usable times.")
+        try:
+            with open("skipped_events.txt", "a", encoding="utf-8") as log:
+                log.write(f"{event['title']}\t{event['link']}\n")
+        except Exception as log_err:
+            print(f"[📝] Could not write to skipped_events.txt: {log_err}")
+        return []
+
+    print(f"[👀] {event['title']} → times={times}, exhibit_flag={exhibit_flag}")
     result = []
     for idx, (start_dt, end_dt) in enumerate(times):
         title = event["title"]
@@ -238,7 +288,7 @@ def worker(event):
                 "allDay": 1 if end_dt is None else 0
             })
 
-    return result or []
+    return result
 
 from math import ceil
 

@@ -258,6 +258,7 @@
   display: inline-block;
   width: fit-content;
   max-width: none;
+  z-index: 2000;
 }
 #backToPreviousViewBtn:hover {
   background-color: #005f85;
@@ -364,9 +365,7 @@
     <option value="timeGridDay">Day</option>
     
   </select>
-  <button id="backToPreviousViewBtn" style="display:none; position: fixed; top: 1rem; right: 1rem; z-index: 9999;">
-  ← Back
-</button>
+ 
 </fieldset>
 <div style="margin-top: 1rem; padding-top: 0.5rem; border-top: 1px solid #ccc; text-align: center;">
   <a href="/about" style="font-size: 0.95rem; color: #007BA7; text-decoration: none;">
@@ -374,6 +373,9 @@
   </a>
 </div>
 </div>
+<button id="backToPreviousViewBtn" style="display: none;">
+  ← Back
+</button>
     <div id="calendar"></div>
   
 
@@ -512,16 +514,20 @@ calendar.setOption("dateClick", function(info) {
   previousView = calendar.view.type;
   previousDate = calendar.getDate();
   calendar.changeView("timeGridDay", info.dateStr);
+  document.getElementById("calendarViewSelect").value = "timeGridDay";
   backBtn.style.display = "inline-block";
 });
 
 backBtn.addEventListener("click", () => {
+  const viewSelect = document.getElementById("calendarViewSelect");
   if (previousView) {
     calendar.changeView(previousView, previousDate);
+    if (viewSelect) viewSelect.value = previousView; // 🔁 sync the dropdown
     previousView = null;
     previousDate = null;
   } else {
     calendar.changeView("dayGridMonth");
+    if (viewSelect) viewSelect.value = "dayGridMonth"; // 🔁 fallback default
   }
   backBtn.style.display = "none";
 });
