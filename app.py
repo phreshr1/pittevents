@@ -1,5 +1,7 @@
 from flask import Flask, render_template, jsonify, request
 import sqlite3
+import os
+
 
 app = Flask(__name__)
 
@@ -7,6 +9,20 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+@app.route("/submit-feedback", methods=["POST"])
+def submit_feedback():
+    email = request.form.get("email", "")
+    message = request.form.get("message")
+
+    # Save to text file
+    with open("feedback.txt", "a") as f:
+        f.write(f"Email: {email}\nMessage: {message}\n---\n")
+
+    return render_template("about.html", submitted=True)
 @app.route("/events")
 def get_events():
     source_filter = request.args.get("source")
@@ -32,7 +48,7 @@ def get_events():
     conn.close()
     return jsonify(events)
 
-import os
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+    #app.run(debug=True)

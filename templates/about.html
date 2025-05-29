@@ -1,0 +1,96 @@
+<body>
+  <div class="card-container">
+    <div class="card">
+      <h1>About Pittsburgh Events Calendar</h1>
+      <p>This calendar aggregates events from multiple Pittsburgh sources.</p>
+
+      <h2>Submit Feedback</h2>
+      {% if submitted %}
+        <p style="color: green;">Thank you for your feedback!</p>
+      {% endif %}
+      <form action="/submit-feedback" method="POST">
+        <label for="email">Email (optional):</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="message">Bug report or feature request:</label><br>
+        <textarea id="message" name="message" rows="6" required></textarea><br>
+
+        <button type="submit">Submit</button>
+      </form>
+
+<!--
+      <h2>Support the Project</h2>
+      <div style="text-align: center;">
+  <form action="https://www.paypal.com/donate" method="post" target="_blank" style="display: inline-block;">
+    <input type="hidden" name="business" value="YOUR_PAYPAL_ID">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="submit" value="Buy me a coffee">
+  </form>
+</div>-->
+<p style="margin-top: 2rem; font-size: 0.9rem; color: #666;">
+  Developed to procrastinate preparing for residency
+</p>
+      <p style="margin-top: 2rem;"><a href="/">← Back to calendar</a></p>
+    </div>
+  </div>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+
+    form {
+      text-align: left;
+    }
+
+    input[type="email"], textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button, input[type="submit"] {
+      background-color: #007BA7;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover, input[type="submit"]:hover {
+      background-color: #005f85;
+    }
+
+    a {
+      color: #007BA7;
+      text-decoration: none;
+    }
+  </style>
+</body>

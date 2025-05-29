@@ -262,9 +262,42 @@
 #backToPreviousViewBtn:hover {
   background-color: #005f85;
 }
+#loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  transition: opacity 0.5s ease;
+}
+
+#loading-logo {
+  width: 120px;
+  animation: strobe 1.5s infinite ease-in-out;
+}
+
+@keyframes strobe {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+/* Force VisitPittsburgh subevent labels to use black text */
+#visitPghSubcategories label.legend-label {
+  color: black !important;
+}
+#visitPghSubcategories label.legend-label * {
+  color: black !important;
+}
   </style>
 </head>
 <body>
+<div id="loading-overlay">
+  <img src="/static/images/logo.png" alt="Loading..." id="loading-logo">
+</div>
   <button id="toggleSidebar" class="floating-toggle">☰</button>
   <div id="main">
     <div id="sidebar">
@@ -299,23 +332,23 @@
 
 </label>
 <div id="visitPghSubcategories" style="display: none;">
-  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Comedy"> Comedy</label>
-  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Culinary"> Culinary</label>
-  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Family Fun"> Family Fun</label>
-  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Festivals/Fairs/Parades" > Festivals</label>
-  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Film"> Film</label>
-  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Fundraiser"> Fundraiser</label>
-  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - History + Heritage"> History + Heritage</label>
-  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Musical Performance"> Musical Performance</label>
-  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Outdoor Adventure"> Outdoor Adventure</label>
-  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Performing Arts"> Performing Arts</label>
-  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Sporting Events"> Sporting Events</label>
-  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Sports Competitions + Tournaments"> Sports Competitions</label>
-  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Theater"> Theater</label>
-  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Tours + Sightseeing"> Tours</label>
-  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Virtual Event"> Virtual Event</label>
-  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Visual Arts"> Visual Arts</label>
-  <label class="legend-label" style="margin-left: 1rem;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Workshops/Seminars/Lectures"> Workshops</label>
+  <label class="legend-label" style="margin-left: 1rem; color: black;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Comedy"> Comedy</label>
+  <label class="legend-label" style="margin-left: 1rem; color: black;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Culinary"> Culinary</label>
+  <label class="legend-label" style="margin-left: 1rem; color: black;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Family Fun"> Family Fun</label>
+  <label class="legend-label" style="margin-left: 1rem; color: black;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Festivals/Fairs/Parades" > Festivals</label>
+  <label class="legend-label" style="margin-left: 1rem; color: black;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Film"> Film</label>
+  <label class="legend-label" style="margin-left: 1rem; color: black;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Fundraiser"> Fundraiser</label>
+  <label class="legend-label" style="margin-left: 1rem; color: black;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - History + Heritage"> History + Heritage</label>
+  <label class="legend-label" style="margin-left: 1rem; color: black;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Musical Performance"> Musical Performance</label>
+  <label class="legend-label" style="margin-left: 1rem; color: black;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Outdoor Adventure"> Outdoor Adventure</label>
+  <label class="legend-label" style="margin-left: 1rem; color: black;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Performing Arts"> Performing Arts</label>
+  <label class="legend-label" style="margin-left: 1rem; color: black;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Sporting Events"> Sporting Events</label>
+  <label class="legend-label" style="margin-left: 1rem; color: black;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Sports Competitions + Tournaments"> Sports Competitions</label>
+  <label class="legend-label" style="margin-left: 1rem; color: black;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Theater"> Theater</label>
+  <label class="legend-label" style="margin-left: 1rem; color: black;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Tours + Sightseeing"> Tours</label>
+  <label class="legend-label" style="margin-left: 1rem; color: black;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Virtual Event"> Virtual Event</label>
+  <label class="legend-label" style="margin-left: 1rem; color: black;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Visual Arts"> Visual Arts</label>
+  <label class="legend-label" style="margin-left: 1rem; color: black;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Workshops/Seminars/Lectures"> Workshops</label>
 </div>
 
 
@@ -331,13 +364,18 @@
     <option value="timeGridDay">Day</option>
     
   </select>
-  </div>
   <button id="backToPreviousViewBtn" style="display:none; position: fixed; top: 1rem; right: 1rem; z-index: 9999;">
   ← Back
 </button>
 </fieldset>
+<div style="margin-top: 1rem; padding-top: 0.5rem; border-top: 1px solid #ccc; text-align: center;">
+  <a href="/about" style="font-size: 0.95rem; color: #007BA7; text-decoration: none;">
+    About this site / Submit feedback
+  </a>
+</div>
+</div>
     <div id="calendar"></div>
-  </div>
+  
 
   <script>
     const sourceColors = {
@@ -377,8 +415,11 @@
   }
 }
 const initialView = isMobile ? "threeDay" : "dayGridMonth";
+const initialDate = isMobile ? undefined : new Date();
+
 const calendar = new FullCalendar.Calendar(calendarEl, {
   initialView: initialView,
+  initialDate: initialDate,  
   height: "100%",
   contentHeight: "auto",
   stickyHeaderDates: true,
@@ -412,6 +453,16 @@ const calendar = new FullCalendar.Calendar(calendarEl, {
     parent.style.justifyContent = "center";
     parent.style.alignItems = "center";
     parent.style.width = "100%";
+  }
+// ✅ SCROLL TO TODAY
+  if (
+    !window.matchMedia("(max-width: 767px)").matches &&
+    calendar.view.type === "dayGridMonth"
+  ) {
+    const todayCell = document.querySelector(".fc-day-today");
+    if (todayCell) {
+      todayCell.scrollIntoView({ behavior: "auto", block: "center" });
+    }
   }
 },
 eventContent: function(arg) {
@@ -475,26 +526,43 @@ backBtn.addEventListener("click", () => {
   backBtn.style.display = "none";
 });
       function fetchFilteredEvents() {
-        fetch("/events")
-          .then(response => response.json())
-          .then(allEvents => {
-            const checkedSources = Array.from(document.querySelectorAll(".source-toggle:checked")).map(cb => cb.value);
-            const keyword = document.getElementById("searchInput").value.toLowerCase();
-            const filtered = allEvents.filter(event =>
-              checkedSources.includes(event.source) &&
-              (event.title.toLowerCase().includes(keyword) ||
-                (event.description && event.description.toLowerCase().includes(keyword)))
-            );
+  fetch("/events")
+    .then(response => response.json())
+    .then(allEvents => {
+      const checkedSources = Array.from(document.querySelectorAll(".source-toggle:checked")).map(cb => cb.value);
+      const keyword = document.getElementById("searchInput").value.toLowerCase();
+      const filtered = allEvents.filter(event =>
+        checkedSources.includes(event.source) &&
+        (event.title.toLowerCase().includes(keyword) ||
+          (event.description && event.description.toLowerCase().includes(keyword)))
+      );
 
-            const colored = filtered.map(event => ({
-              ...event,
-              color: sourceColors[event.source] || "#999"
-            }));
+      const colored = filtered.map(event => {
+  const baseColor = sourceColors[event.source] || "#999";
+  const needsBlackText = event.source?.startsWith("VisitPittsburgh");
 
-            calendar.removeAllEvents();
-            calendar.addEventSource(colored);
-          });
-      }
+  return {
+    ...event,
+    color: baseColor,
+    textColor: needsBlackText ? "black" : undefined
+  };
+});
+
+      calendar.removeAllEvents();
+      calendar.addEventSource(colored);
+
+      // ✅ Scroll and hide loading screen AFTER events render
+      setTimeout(() => {
+        scrollToTodayInMonthView();
+
+        const overlay = document.getElementById("loading-overlay");
+        if (overlay) {
+          overlay.style.opacity = "0";
+          setTimeout(() => overlay.remove(), 500);
+        }
+      }, 300);
+    });
+}
 
       document.querySelectorAll(".source-toggle").forEach(cb => {
         cb.addEventListener("change", fetchFilteredEvents);
@@ -544,11 +612,26 @@ if (!visitMaster.checked) {
 if (isMobile) main.classList.remove("sidebar-open");
 else main.classList.add("sidebar-open");
 
+function scrollToTodayInMonthView() {
+  if (
+    !window.matchMedia("(max-width: 767px)").matches &&
+    calendar.view.type === "dayGridMonth"
+  ) {
+    setTimeout(() => {
+      const todayCell = document.querySelector(".fc-day-today");
+      if (todayCell) {
+        todayCell.scrollIntoView({ behavior: "auto", block: "center" });
+      }
+    }, 100); // Delay ensures DOM is painted
+  }
+}
+
 document.getElementById("toggleSidebar").addEventListener("click", function () {
   main.classList.toggle("sidebar-open");
   setTimeout(() => calendar.updateSize(), 300); // wait for sidebar animation to finish
 });
     });
+	
   </script>
   
 

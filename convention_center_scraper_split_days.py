@@ -39,7 +39,7 @@ def parse_event_card(card):
         events = []
         current_date = start_date
         while current_date <= end_date and current_date <= CUTOFF_DATE:
-            date_iso = current_date.strftime("%Y-%m-%dT08:00:00")
+            date_iso = current_date.strftime("%Y-%m-%d")  # no time = all-day
             events.append({
                 "title": title,
                 "date": date_iso,
@@ -89,9 +89,9 @@ cursor = conn.cursor()
 cursor.execute("DELETE FROM events WHERE source = ?", (SOURCE,))
 for e in events:
     cursor.execute("""
-        INSERT INTO events (title, date, end, link, allDay, color, source, description)
-        VALUES (?, ?, NULL, ?, 0, ?, ?, ?)
-    """, (
+    INSERT INTO events (title, date, end, link, allDay, color, source, description)
+    VALUES (?, ?, NULL, ?, 1, ?, ?, ?)
+""", (
         e["title"], e["date"], e["link"], COLOR, SOURCE, e["description"]
     ))
 conn.commit()
