@@ -69,10 +69,30 @@ def get_events():
     conn = sqlite3.connect("events.db")
     cursor = conn.cursor()
 
+    # Use COALESCE to support both date/link and start/url columns
     if source_filter:
-        cursor.execute("SELECT title, date, link, end, allDay, color, source FROM events WHERE source = ?", (source_filter,))
+        cursor.execute("""
+            SELECT title,
+                   COALESCE(date, start) as start,
+                   COALESCE(link, url) as url,
+                   end,
+                   allDay,
+                   color,
+                   source
+            FROM events
+            WHERE source = ?
+        """, (source_filter,))
     else:
-        cursor.execute("SELECT title, date, link, end, allDay, color, source FROM events")
+        cursor.execute("""
+            SELECT title,
+                   COALESCE(date, start) as start,
+                   COALESCE(link, url) as url,
+                   end,
+                   allDay,
+                   color,
+                   source
+            FROM events
+        """)
 
     events = []
     for row in cursor.fetchall():
@@ -90,5 +110,5 @@ def get_events():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
-    #app.run(debug=True)
+    #app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+    app.run(debug=True)

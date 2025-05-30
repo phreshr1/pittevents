@@ -339,6 +339,7 @@
         <div><strong>Outdoors & Community</strong></div>
         <label class="legend-label"><span class="legend-color" style="background-color: #4CAF50;"></span><input type="checkbox" class="source-toggle" value="Pittsburgh Parks" checked> Pittsburgh Parks</label>
         <label class="legend-label"><span class="legend-color" style="background-color: #A52A2A;"></span><input type="checkbox" class="source-toggle" value="Lawrence Convention Center" checked> Lawrence Convention Center</label>
+        <label class="legend-label"><span class="legend-color" style="background-color: #1E90FF;"></span><input type="checkbox" class="source-toggle" value="Downtown Pittsburgh" checked> Downtown Pittsburgh</label>
 
 <label class="legend-label" style="display: flex; align-items: center;">
   <span class="legend-color" style="background-color: #FFD700; margin-right: 6px;"></span>
@@ -370,6 +371,10 @@
 
         <div><strong>Sports</strong></div>
         <label class="legend-label"><span class="legend-color" style="background-color: #000000;"></span><input type="checkbox" class="source-toggle" value="Pirates" checked> Pirates</label>
+        <label class="legend-label">
+          <span class="legend-color" style="background-color: #DC143C;"></span>
+          <input type="checkbox" class="source-toggle" value="PPG Paints Arena" checked> PPG Paints Arena
+        </label>
       </fieldset>
     <fieldset style="margin-top: 1rem;">
   <legend>Calendar View</legend>
@@ -403,6 +408,8 @@
       "Pittsburgh Parks": "#4CAF50",
       "Lawrence Convention Center": "#A52A2A",
       "Pirates": "#000000",
+      "PPG Paints Arena": "#DC143C",
+      "Downtown Pittsburgh": "#1E90FF",
       "VisitPittsburgh - Comedy": "#FFD700",
       "VisitPittsburgh - Culinary": "#FFD700",
       "VisitPittsburgh - Family Fun": "#FFD700",
@@ -486,8 +493,13 @@ eventContent: function(arg) {
   const isMobile = window.matchMedia("(max-width: 767px)").matches;
   const viewType = arg.view.type;
 
-  // On mobile in week or month view, show only the title
-  if (isMobile && (viewType === "timeGridWeek" || viewType === "dayGridMonth")) {
+  // On mobile in week or month view, show only the title (hide time)
+  if (isMobile && (viewType === "timeGridWeek" || viewType === "dayGridMonth" || viewType === "threeDay")) {
+    return { html: `<div class="fc-event-title">${arg.event.title}</div>` };
+  }
+
+  // On mobile in timeGridDay view, show only the title (hide time)
+  if (isMobile && viewType === "timeGridDay") {
     return { html: `<div class="fc-event-title">${arg.event.title}</div>` };
   }
 
@@ -559,15 +571,29 @@ backBtn.addEventListener("click", () => {
       );
 
       const colored = filtered.map(event => {
-  const baseColor = sourceColors[event.source] || "#999";
-  const needsBlackText = event.source?.startsWith("VisitPittsburgh");
-
-  return {
-    ...event,
-    color: baseColor,
-    textColor: needsBlackText ? "black" : undefined
-  };
-});
+        // Use the color from the legend key for each source
+        let baseColor = sourceColors[event.source];
+        // Fallback: try to match "PPG Paints Arena" for events missing the exact source
+        if (!baseColor && event.source && event.source.toLowerCase().includes("ppg")) {
+          baseColor = sourceColors["PPG Paints Arena"];
+        }
+        // Fallback: try to match "Downtown Pittsburgh" for events missing the exact source
+        if (!baseColor && event.source && event.source.startsWith("Downtown Pittsburgh")) {
+          baseColor = sourceColors["Downtown Pittsburgh"];
+        }
+        // Fallback: try to match "VisitPittsburgh" for subcategories
+        if (!baseColor && event.source && event.source.startsWith("VisitPittsburgh")) {
+          baseColor = "#FFD700";
+        }
+        // Fallback: default grey
+        if (!baseColor) baseColor = "#999";
+        const needsBlackText = event.source?.startsWith("VisitPittsburgh");
+        return {
+          ...event,
+          color: baseColor,
+          textColor: needsBlackText ? "black" : undefined
+        };
+      });
 
       calendar.removeAllEvents();
       calendar.addEventSource(colored);
