@@ -5,6 +5,35 @@ import json
 import sqlite3
 from date_parser_hybrid import parse_flexible_date_range
 
+# Add a mapping from raw category names to display names (title case, nice formatting)
+CATEGORY_DISPLAY_MAP = {
+    "ARTS + CULTURE": "Arts & Culture",
+    "COMMUNITY": "Community",
+    "CONVENTION": "Convention",
+    "ENTERTAINMENT": "Entertainment",
+    "FAMILY": "Family",
+    "FESTIVAL": "Festival",
+    "FILM & MOVIES": "Film & Movies",
+    "HOLIDAYS": "Holidays",
+    "MARKET SQUARE": "Market Square",
+    "MUSIC": "Music",
+    "NIGHTLIFE": "Nightlife",
+    "ONLINE & VIRTUAL EVENTS": "Online & Virtual Events",
+    "OUTDOOR": "Outdoor",
+    "PDP EVENTS": "PDP Events",
+    "SHOPPING": "Shopping",
+    "SPORTS + RECREATION": "Sports & Recreation",
+    "TOURS": "Tours",
+    "WORKSHOPS & CLASSES": "Workshops & Classes"
+}
+
+def normalize_categories(raw_categories):
+    """Convert raw categories to display names using CATEGORY_DISPLAY_MAP."""
+    return [
+        CATEGORY_DISPLAY_MAP.get(cat.upper(), cat.title())
+        for cat in raw_categories
+    ]
+
 def scrape_downtown_pittsburgh_events():
     url = "https://downtownpittsburgh.com/events/"
     resp = requests.get(url)
@@ -12,7 +41,8 @@ def scrape_downtown_pittsburgh_events():
     events = []
     for event_card in soup.select("div.copyContent"):
         # Categories
-        categories = [t.get_text(strip=True).rstrip(',') for t in event_card.select(".category .term")]
+        raw_categories = [t.get_text(strip=True).rstrip(',') for t in event_card.select(".category .term")]
+        categories = normalize_categories(raw_categories)
         # Title
         title_tag = event_card.select_one("h1 a")
         title = title_tag.get_text(strip=True) if title_tag else "Untitled Event"
@@ -67,7 +97,8 @@ def scrape_downtown_pittsburgh_events():
                     "description": desc,
                     "link": url,
                     "color": "#1E90FF",
-                    "source": "Downtown Pittsburgh"
+                    "source": "Downtown Pittsburgh",
+                    "categories": categories
                 })
                 events.append({
                     "title": f"{title} (ends)",
@@ -77,7 +108,8 @@ def scrape_downtown_pittsburgh_events():
                     "description": desc,
                     "link": url,
                     "color": "#1E90FF",
-                    "source": "Downtown Pittsburgh"
+                    "source": "Downtown Pittsburgh",
+                    "categories": categories
                 })
             elif delta > 0:
                 # Multi-day event, create an event for each day
@@ -105,7 +137,8 @@ def scrape_downtown_pittsburgh_events():
                         "description": desc,
                         "link": url,
                         "color": "#1E90FF",
-                        "source": "Downtown Pittsburgh"
+                        "source": "Downtown Pittsburgh",
+                        "categories": categories
                     })
             else:
                 # Single-day event (delta == 0)
@@ -134,7 +167,8 @@ def scrape_downtown_pittsburgh_events():
                     "description": desc,
                     "link": url,
                     "color": "#1E90FF",
-                    "source": "Downtown Pittsburgh"
+                    "source": "Downtown Pittsburgh",
+                    "categories": categories
                 })
         continue
     return events
@@ -145,7 +179,8 @@ def scrape_downtown_pittsburgh_events_from_file(html_path):
     events = []
     for event_card in soup.select("div.copyContent"):
         # Categories
-        categories = [t.get_text(strip=True).rstrip(',') for t in event_card.select(".category .term")]
+        raw_categories = [t.get_text(strip=True).rstrip(',') for t in event_card.select(".category .term")]
+        categories = normalize_categories(raw_categories)
         # Title
         title_tag = event_card.select_one("h1 a")
         title = title_tag.get_text(strip=True) if title_tag else "Untitled Event"
@@ -200,7 +235,8 @@ def scrape_downtown_pittsburgh_events_from_file(html_path):
                     "description": desc,
                     "link": url,
                     "color": "#1E90FF",
-                    "source": "Downtown Pittsburgh"
+                    "source": "Downtown Pittsburgh",
+                    "categories": categories
                 })
                 events.append({
                     "title": f"{title} (ends)",
@@ -210,7 +246,8 @@ def scrape_downtown_pittsburgh_events_from_file(html_path):
                     "description": desc,
                     "link": url,
                     "color": "#1E90FF",
-                    "source": "Downtown Pittsburgh"
+                    "source": "Downtown Pittsburgh",
+                    "categories": categories
                 })
             elif delta > 0:
                 # Multi-day event, create an event for each day
@@ -238,7 +275,8 @@ def scrape_downtown_pittsburgh_events_from_file(html_path):
                         "description": desc,
                         "link": url,
                         "color": "#1E90FF",
-                        "source": "Downtown Pittsburgh"
+                        "source": "Downtown Pittsburgh",
+                        "categories": categories
                     })
             else:
                 # Single-day event (delta == 0)
@@ -267,7 +305,8 @@ def scrape_downtown_pittsburgh_events_from_file(html_path):
                     "description": desc,
                     "link": url,
                     "color": "#1E90FF",
-                    "source": "Downtown Pittsburgh"
+                    "source": "Downtown Pittsburgh",
+                    "categories": categories
                 })
         continue
     return events
