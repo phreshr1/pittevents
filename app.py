@@ -3,6 +3,8 @@ from flask import Response
 from datetime import datetime
 from functools import wraps
 from flask import request
+from dotenv import load_dotenv
+load_dotenv()
 import sqlite3
 import os
 
@@ -110,5 +112,6 @@ def get_events():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
-    #app.run(debug=True)
+    debug_mode = os.environ.get("FLASK_DEBUG", "false").lower() == "true"
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)), debug=debug_mode)
+
