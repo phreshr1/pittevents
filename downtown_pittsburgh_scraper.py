@@ -314,6 +314,11 @@ def scrape_downtown_pittsburgh_events_from_file(html_path):
 def save_events_to_db(events, db_path="events.db", source_name="Downtown Pittsburgh"):
     conn = sqlite3.connect(db_path)
     c = conn.cursor()
+    c.execute("PRAGMA table_info(events)")
+    columns = [row[1] for row in c.fetchall()]
+    if "genre" not in columns:
+        c.execute("ALTER TABLE events ADD COLUMN genre TEXT")
+
     # Remove old entries from this source for today and later
     today = datetime.today().strftime("%Y-%m-%d")
     c.execute("DELETE FROM events WHERE source = ? AND date >= ?", (source_name, today))
@@ -323,8 +328,8 @@ def save_events_to_db(events, db_path="events.db", source_name="Downtown Pittsbu
         c.execute("SELECT 1 FROM events WHERE title = ? AND date = ? AND source = ?", (event.get("title"), event.get("date"), source_name))
         if c.fetchone():
             continue
-        c.execute('''INSERT INTO events (title, date, end, allDay, description, link, color, source)
-                     VALUES (?, ?, ?, ?, ?, ?, ?, ?)''',
+        c.execute('''INSERT INTO events (title, date, end, allDay, description, link, color, source, genre)
+                     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)''',
                   (
                       event.get("title"),
                       event.get("date"),
@@ -333,8 +338,10 @@ def save_events_to_db(events, db_path="events.db", source_name="Downtown Pittsbu
                       event.get("description"),
                       event.get("link"),
                       event.get("color"),
-                      source_name
-                  ))
+                      source_name,
+                    ", ".join(event["categories"]) if isinstance(event.get("categories"), list) else ""
+
+                ))
         added += 1
     conn.commit()
     conn.close()
@@ -355,4 +362,6 @@ if __name__ == "__main__":
     clear_downtown_pittsburgh_events(db_path="events.db", source_name="Downtown Pittsburgh")
     events = scrape_downtown_pittsburgh_events()
     save_events_to_db(events, db_path="events.db", source_name="Downtown Pittsburgh")
+    for event in events:
+        print("[DEBUG] Saving event:", event.get("title"), "| categories:", event.get("categories"))
     print(json.dumps(events, indent=2))

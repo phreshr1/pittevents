@@ -337,14 +337,23 @@
         <label class="legend-label"><span class="legend-color" style="background-color: #FF0000;"></span><input type="checkbox" class="source-toggle" value="Heinz History Center" checked> Heinz History Center</label>
 
         <div><strong>Outdoors & Community</strong></div>
+        <label class="legend-label">
+  <span class="legend-color" style="background-color: #8A2BE2;"></span>
+  <input type="checkbox" class="source-toggle" value="Poetry Lounge" checked>
+  Millvale Poetry Lounge
+</label>
         <label class="legend-label"><span class="legend-color" style="background-color: #4CAF50;"></span><input type="checkbox" class="source-toggle" value="Pittsburgh Parks" checked> Pittsburgh Parks</label>
         <label class="legend-label"><span class="legend-color" style="background-color: #A52A2A;"></span><input type="checkbox" class="source-toggle" value="Lawrence Convention Center" checked> Lawrence Convention Center</label>
-        <label class="legend-label"><span class="legend-color" style="background-color: #1E90FF;"></span><input type="checkbox" class="source-toggle" value="Downtown Pittsburgh" checked> Downtown Pittsburgh</label>
+        <label class="legend-label">
+  <span class="legend-color" style="background-color: #DAA520;"></span>
+  <input type="checkbox" class="source-toggle" value="Strip District Terminal" checked>
+  Strip District Terminal
+</label>
 
-<label class="legend-label" style="display: flex; align-items: center;">
+        <label class="legend-label" style="display: flex; align-items: center;">
   <span class="legend-color" style="background-color: #FFD700; margin-right: 6px;"></span>
   <input type="checkbox" class="source-toggle" id="visitPghMaster" style="margin-right: 4px;" checked>
-  <span style="margin-right: 4px;">VisitPittsburgh (BETA)</span>
+  <span style="margin-right: 4px;">VisitPittsburgh</span>
   <button type="button" id="vpToggle" style="all: unset; font-size: 0.6rem; cursor: pointer;">▼</button>
 
 </label>
@@ -367,6 +376,13 @@
   <label class="legend-label" style="margin-left: 1rem; color: black;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Visual Arts" checked> Visual Arts</label>
   <label class="legend-label" style="margin-left: 1rem; color: black;"><input type="checkbox" class="source-toggle vp-sub" value="VisitPittsburgh - Workshops/Seminars/Lectures" checked> Workshops</label>
 </div>
+        <label class="legend-label">
+  <span class="legend-color" style="background-color: #1E90FF; margin-right: 6px;"></span>
+  <input type="checkbox" class="source-toggle" id="dtPghMaster" style="margin-right: 4px;" checked>
+  <span style="margin-right: 4px;">Downtown Pittsburgh</span>
+  <button type="button" id="dtpghToggle" style="all: unset; font-size: 0.6rem; cursor: pointer;">▼</button>
+</label>
+<div id="dtPghSubcategories" style="display: none;"></div>
 
 
         <div><strong>Sports</strong></div>
@@ -410,6 +426,7 @@
       "Pirates": "#000000",
       "PPG Paints Arena": "#DC143C",
       "Downtown Pittsburgh": "#1E90FF",
+      "Poetry Lounge": "#8A2BE2",
       "VisitPittsburgh - Comedy": "#FFD700",
       "VisitPittsburgh - Culinary": "#FFD700",
       "VisitPittsburgh - Family Fun": "#FFD700",
@@ -426,6 +443,7 @@
       "VisitPittsburgh - Tours + Sightseeing": "#FFD700",
       "VisitPittsburgh - Virtual Event": "#FFD700",
       "VisitPittsburgh - Visual Arts": "#FFD700",
+      "Strip District Terminal": "#DAA520",
       "VisitPittsburgh - Workshops/Seminars/Lectures": "#FFD700"
     };
 
@@ -558,50 +576,124 @@ backBtn.addEventListener("click", () => {
   }
   backBtn.style.display = "none";
 });
-      function fetchFilteredEvents() {
+
+// Dynamically populate Downtown Pittsburgh genres from real events
+fetch("/events")
+  .then(response => response.json())
+  .then(events => {
+    const genreCounts = {};
+    
+events.forEach(event => {
+  if (event.source === "Downtown Pittsburgh" && event.genre) {
+    event.genre.split(",").map(g => g.trim()).forEach(g => {
+      if (g) genreCounts[g] = (genreCounts[g] || 0) + 1;
+    });
+  }
+});
+
+const container = document.getElementById("dtPghSubcategories");
+container.innerHTML = ""; // Clear existing subcategory checkboxes
+
+Object.keys(genreCounts).sort().forEach(genre => {
+  const label = document.createElement("label");
+  label.className = "legend-label";
+  label.style.marginLeft = "1rem";
+  label.innerHTML = `
+  <input type="checkbox" class="source-toggle dtpgh-sub" value="${genre}" checked>
+  ${genre}
+`;
+  container.appendChild(label);
+});
+
+// Attach change listeners
+document.querySelectorAll(".dtpgh-sub").forEach(cb => {
+  cb.addEventListener("change", fetchFilteredEvents);
+});
+
+    // ✅ Toggle logic (after checkboxes exist)
+    const dtToggle = document.getElementById("dtpghToggle");
+    if (dtToggle) {
+      dtToggle.addEventListener("click", function () {
+        const section = document.getElementById("dtPghSubcategories");
+        section.style.display = section.style.display === "none" ? "block" : "none";
+        this.textContent = section.style.display === "block" ? "▲" : "▼";
+      });
+    }
+
+    // ✅ Sync all Downtown genres with master checkbox
+    const dtMaster = document.getElementById("dtPghMaster");
+    if (dtMaster) {
+      dtMaster.addEventListener("change", function () {
+        const isChecked = this.checked;
+        document.querySelectorAll(".dtpgh-sub").forEach(cb => cb.checked = isChecked);
+        fetchFilteredEvents();
+      });
+    }
+  });
+
+function fetchFilteredEvents() {
   fetch("/events")
     .then(response => response.json())
     .then(allEvents => {
-      const checkedSources = Array.from(document.querySelectorAll(".source-toggle:checked")).map(cb => cb.value);
+      const checkedSources = Array.from(document.querySelectorAll(".source-toggle:not(.dtpgh-sub):checked")).map(cb => cb.value);
+
+// ✅ Explicitly add Downtown Pittsburgh if master is checked
+if (document.getElementById("dtPghMaster")?.checked) {
+  checkedSources.push("Downtown Pittsburgh");
+}
+      const downtownGenres = new Set(Array.from(document.querySelectorAll(".dtpgh-sub:checked")).map(cb => cb.value));
       const keyword = document.getElementById("searchInput").value.toLowerCase();
-      const filtered = allEvents.filter(event =>
-        checkedSources.includes(event.source) &&
-        (event.title.toLowerCase().includes(keyword) ||
-          (event.description && event.description.toLowerCase().includes(keyword)))
-      );
+
+      const filtered = allEvents.filter(event => {
+        const matchesKeyword =
+          event.title.toLowerCase().includes(keyword) ||
+          (event.description && event.description.toLowerCase().includes(keyword));
+
+        // ✅ Main source matching (non-downtown)
+        if (event.source !== "Downtown Pittsburgh") {
+          return checkedSources.includes(event.source) && matchesKeyword;
+        }
+
+        // ✅ Downtown logic: match if any genre is checked
+        const eventGenres = (event.genre || "").split(",").map(g => g.trim()).filter(g => g);
+console.log("[🧪] Downtown match check", {
+  title: event.title,
+  genre: event.genre,
+  eventGenres,
+  downtownGenres: Array.from(downtownGenres)
+});
+        const genreMatch = eventGenres.some(g => downtownGenres.has(g));
+const showDowntown = downtownGenres.size > 0;
+
+return showDowntown && genreMatch && matchesKeyword;
+      });
 
       const colored = filtered.map(event => {
-        // Use the color from the legend key for each source
         let baseColor = sourceColors[event.source];
-        // Fallback: try to match "PPG Paints Arena" for events missing the exact source
         if (!baseColor && event.source && event.source.toLowerCase().includes("ppg")) {
           baseColor = sourceColors["PPG Paints Arena"];
         }
-        // Fallback: try to match "Downtown Pittsburgh" for events missing the exact source
         if (!baseColor && event.source && event.source.startsWith("Downtown Pittsburgh")) {
           baseColor = sourceColors["Downtown Pittsburgh"];
         }
-        // Fallback: try to match "VisitPittsburgh" for subcategories
         if (!baseColor && event.source && event.source.startsWith("VisitPittsburgh")) {
           baseColor = "#FFD700";
         }
-        // Fallback: default grey
         if (!baseColor) baseColor = "#999";
         const needsBlackText = event.source?.startsWith("VisitPittsburgh");
         return {
           ...event,
           color: baseColor,
-          textColor: needsBlackText ? "black" : undefined
+          textColor: needsBlackText ? "black" : undefined,
+          genre: event.genre || ""  // ✅ pass it through
         };
       });
 
       calendar.removeAllEvents();
       calendar.addEventSource(colored);
 
-      // ✅ Scroll and hide loading screen AFTER events render
       setTimeout(() => {
         scrollToTodayInMonthView();
-
         const overlay = document.getElementById("loading-overlay");
         if (overlay) {
           overlay.style.opacity = "0";
@@ -653,6 +745,37 @@ const visitMaster = document.getElementById("visitPghMaster");
 if (!visitMaster.checked) {
   document.querySelectorAll(".vp-sub").forEach(cb => cb.checked = false);
 }
+
+function updateDowntownMasterCheckboxState() {
+  const subs = [...document.querySelectorAll(".dtpgh-sub")];
+  const checked = subs.filter(cb => cb.checked);
+  const master = document.getElementById("dtPghMaster");
+
+  if (checked.length === 0) {
+    master.indeterminate = false;
+    master.checked = false;
+  } else if (checked.length === subs.length) {
+    master.indeterminate = false;
+    master.checked = true;
+  } else {
+    master.indeterminate = true;
+    master.checked = false;
+  }
+}
+
+document.querySelectorAll(".dtpgh-sub").forEach(cb => {
+  cb.addEventListener("change", () => {
+    updateDowntownMasterCheckboxState();
+    fetchFilteredEvents();
+  });
+});
+
+document.getElementById("dtPghMaster").addEventListener("change", function () {
+  const isChecked = this.checked;
+  document.querySelectorAll(".dtpgh-sub").forEach(cb => cb.checked = isChecked);
+  this.indeterminate = false;
+  fetchFilteredEvents();
+});
       fetchFilteredEvents();
 
     const main = document.getElementById("main");

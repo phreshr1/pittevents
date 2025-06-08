@@ -80,7 +80,8 @@ def get_events():
                    end,
                    allDay,
                    color,
-                   source
+                   source,
+                    genre
             FROM events
             WHERE source = ?
         """, (source_filter,))
@@ -92,7 +93,8 @@ def get_events():
                    end,
                    allDay,
                    color,
-                   source
+                   source,
+                    genre
             FROM events
         """)
 
@@ -105,7 +107,8 @@ def get_events():
             "end": row[3] if row[3] else None,
             "allDay": bool(row[4]),
             "color": row[5],
-            "source": row[6]
+            "source": row[6],
+            "genre": row[7] if len(row) > 7 else ""
         })
     conn.close()
     return jsonify(events)
