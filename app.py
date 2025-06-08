@@ -40,7 +40,8 @@ def requires_auth(f):
 
 @requires_auth
 def view_feedback():
-    conn = sqlite3.connect("/data/events.db")
+    # Use the same relative database path as the rest of the application
+    conn = sqlite3.connect("events.db")
     cursor = conn.cursor()
     cursor.execute("SELECT email, message, timestamp FROM feedback ORDER BY timestamp DESC")
     entries = cursor.fetchall()
